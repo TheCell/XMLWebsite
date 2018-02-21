@@ -1,0 +1,15 @@
+<equipment xmlns="www.hslu.ch/xml"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="www.hslu.ch/xml equipmentDB.xsd">
+    <item>
+        <name>Tretmühle</name>
+        <itemID>E001</itemID>
+        <roomID>R001</roomID>
+    </item>
+
+    <item>
+        <name>Tretmühle</name>
+        <itemID>E002</itemID>
+        <roomID>R001</roomID>
+    </item>
+</equipment>

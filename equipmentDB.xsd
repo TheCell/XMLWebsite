@@ -1,0 +1,36 @@
+<xs:schema  xmlns="www.hslu.ch/xml"
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="www.hslu.ch/xml"
+            elementFormDefault="qualified">
+    <xs:element name="equipment">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                <xs:element ref="item"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="item">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="itemID" type="itemIDs"/>
+                <xs:element name="roomID" type="roomIDs"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="roomIDs">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[R]\d{3}"/>
+            <xs:length value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="itemIDs">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[E]\d{3}"/>
+            <xs:length value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
