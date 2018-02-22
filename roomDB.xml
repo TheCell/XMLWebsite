@@ -1,10 +1,17 @@
 <facilities xsi:noNamespaceSchemaLocation="roomDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <room id="R001">
         <name>Lager</name>
-        <equipmentID>E012</equipmentID>
-        <equipmentID>E309</equipmentID>
+        <in_building>Hauptgebäude</in_building>
+        <description>Lagert material</description>
+        <equipment>
+            <equipmentID>E002</equipmentID>
+            <equipmentID>E120</equipmentID>
+        </equipment>
     </room>
     <room id="R002">
-        <name>Schwimmbad</name>
+        <name>Umkleide Herren</name>
+        <in_building>Hallenbad</in_building>
+        <description/>
+        <equipment/>
     </room>
 </facilities>

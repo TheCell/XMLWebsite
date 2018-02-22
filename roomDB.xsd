@@ -19,9 +19,19 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="name" type="xs:string"/>
-                <xs:element name="equipmentID" type="itemID" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="in_building" type="xs:string"/>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element ref="equipment"/>
             </xs:sequence>
             <xs:attribute name="id" type="roomID" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="equipment">
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="equipmentID" type="itemID"/>
+            </xs:sequence>
         </xs:complexType>
     </xs:element>
 
