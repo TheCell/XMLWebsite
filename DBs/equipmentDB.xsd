@@ -20,6 +20,7 @@
                 <xs:sequence>
                     <xs:element name="name" type="xs:string"/>
                     <xs:element name="roomID" type="roomID"/>
+                    <xs:element name="description" type="xs:string"/>
                 </xs:sequence>
             <xs:attribute name="id" type="itemID" use="required"/>
         </xs:complexType>

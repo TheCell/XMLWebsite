@@ -1,0 +1,35 @@
+<courses xsi:noNamespaceSchemaLocation="coursesDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <course id="C012">
+        <name>Zoomba</name>
+        <dateFrom>2017-04-23</dateFrom>
+        <dateTo>2018-04-23</dateTo>
+        <reoccurrance>monthly</reoccurrance>
+        <timeFrom>09:20:00</timeFrom>
+        <timeTo>11:15:00</timeTo>
+        <level>Intermediate</level>
+        <state>active</state>
+        <maxParticipants>30</maxParticipants>
+        <recommendedFor>Fully mobile</recommendedFor>
+        <language>German</language>
+        <courseReservationIDs>
+            <reservationID>RES100</reservationID>
+            <reservationID>RES012</reservationID>
+        </courseReservationIDs>
+        <description>Workout with music</description>
+    </course>
+    <course id="C123">
+        <name>new years eve</name>
+        <dateFrom>2018-12-31</dateFrom>
+        <dateTo>2030-12-31</dateTo>
+        <reoccurrance>annual</reoccurrance>
+        <timeFrom>20:00:00</timeFrom>
+        <timeTo>24:00:00</timeTo>
+        <level>advanced</level>
+        <state>inactive</state>
+        <maxParticipants>1000</maxParticipants>
+        <recommendedFor>all</recommendedFor>
+        <language>English</language>
+        <courseReservationIDs></courseReservationIDs>
+        <description>New Year party</description>
+    </course>
+</courses>

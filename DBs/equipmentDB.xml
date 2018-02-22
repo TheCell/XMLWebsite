@@ -4,9 +4,11 @@
     <item id="E123">
         <name>Tretmuehle</name>
         <roomID>R123</roomID>
+        <description>Stuff and such</description>
     </item>
     <item id="E122">
         <name>Tretmuehle</name>
         <roomID>R123</roomID>
+        <description></description>
     </item>
 </equipment>
