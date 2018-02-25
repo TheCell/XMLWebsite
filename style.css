@@ -3,3 +3,21 @@
     padding: 0;
 }
 
+#logo {
+    float: left;
+    width: 40%;
+}
+
+.menu {
+    float: left;
+    width: 60%;
+}
+
+.menuitem {
+    float: left;
+    width: 33.333333%;
+}
+
+#path35:hover {
+    border: 1px solid red;
+}
