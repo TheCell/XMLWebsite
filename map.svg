@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="Karte.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="431.42454"
+     inkscape:cy="629.82255"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2160"
+     inkscape:window-height="1346"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 14.93006,251.07589 25.192998,-25.52844 -3.524825,-28.52346 6.680041,-20.03143 20.410714,-22.11161 43.467262,-16.63095 13.04018,-17.5759 1.70089,-15.875 -0.37798,-8.504457 -2.29379,-34.759627 8.88915,-3.553989"
+       id="path14"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 14.93006,251.07589 4.342214,9.25606 29.714003,-30.76478 -3.524825,-28.52346 6.680041,-20.03143 20.410715,-22.11161 43.467262,-16.63095 13.04018,-17.5759 1.70089,-15.875 -0.37798,-8.50446 -2.26786,-42.333333"
+       id="path14-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc" />
+    <ellipse
+       id="path33"
+       cx="126.622"
+       cy="200.52158"
+       rx="76.540176"
+       ry="42.427826"
+       style="fill:#ff5555;stroke-width:0.26921082" />
+    <path
+       style="fill:#0000ff;stroke-width:0.71428573"
+       d="m 65.142769,965.54165 -7.750484,-16.515 20.987826,-21.17147 c 11.543304,-11.6443 32.958899,-33.22503 47.590209,-47.95717 L 152.5727,853.1123 145.87484,798.93115 139.17697,744.75 151.77301,707.05138 164.36905,669.35276 202.52,628.01825 c 20.98303,-22.73399 38.52247,-41.55868 38.97655,-41.83265 0.45407,-0.27396 37.44685,-14.50974 82.20618,-31.63506 44.75933,-17.12532 81.75503,-31.52616 82.21266,-32.00188 0.45763,-0.47571 11.6928,-15.48994 24.96704,-33.36494 l 24.13497,-32.5 3.24725,-30.27761 3.24725,-30.27761 -0.84279,-18.65096 c -0.46354,-10.25803 -2.63319,-45.59362 -4.82143,-78.52355 -2.18825,-32.92993 -3.97863,-61.23506 -3.97863,-62.9003 L 434.72619,23.025987 459.50373,22.549053 c 9.17402,-0.176588 10.09656,1.984963 10.09656,1.984963 0.44987,-0.04576 21.40783,334.711684 22.97012,368.935424 l 0.83146,18.21428 -2.91387,27.14286 c -1.60263,14.92857 -3.0952,28.31522 -3.31681,29.7481 -0.30717,1.98602 -6.17535,10.38981 -24.68916,35.35714 -13.35743,18.01355 -24.66511,32.96045 -25.12818,33.21535 -0.46307,0.2549 -37.16338,14.3435 -81.55623,31.30798 -44.39286,16.9645 -81.27025,31.22023 -81.94977,31.67941 -0.67952,0.45919 -18.35809,19.41295 -39.28572,42.11948 l -37.49192,41.88687 -13.34994,37.39884 -12.79164,38.00112 6.54646,52.85714 c 3.60055,29.07143 6.54428,53.38016 6.54163,54.01939 -0.004,0.9661 -109.173577,114.87918 -110.645138,115.45275 -0.263082,0.10257 -3.966048,-7.24528 -8.228813,-16.3285 z"
+       id="path35"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)"
+       sodipodi:nodetypes="ccsscccccscscscccssscssscscssscscccsccc" />
+    <rect
+       id="rect31"
+       width="100.73066"
+       height="41.388393"
+       x="75.878716"
+       y="179.27931"
+       style="fill:#008000;stroke-width:0.26458332" />
+    <path
+       style="fill:#c87137;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 96.152682,151.6318 -2.082468,-1.17586 -2.599976,-6.12393 0.332118,-2.36317 -2.643865,0.93151 -0.06485,2.19711 2.378563,6.40463 2.317311,1.17192 z"
+       id="path56"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <rect
+       style="fill:#c87137;stroke-width:0.26458332"
+       id="rect58"
+       width="10.961308"
+       height="22.111607"
+       x="63.688984"
+       y="189.27678" />
+    <g
+       id="g114">
+      <rect
+         transform="rotate(-26.286571)"
+         style="stroke-width:0.26458332;fill:#b3b3b3"
+         y="125.28919"
+         x="-39.483364"
+         height="27.025299"
+         width="54.617558"
+         id="rect10" />
+      <text
+         transform="rotate(-26.606108)"
+         id="text66"
+         y="140.94807"
+         x="-32.826717"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:7.05555534px;stroke-width:0.26458332"
+           y="140.94807"
+           x="-32.826717"
+           id="tspan64"
+           sodipodi:role="line">Kletterhalle</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05555556px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="164.79761"
+       y="116.1384"
+       id="text70"><tspan
+         sodipodi:role="line"
+         id="tspan68"
+         x="164.79761"
+         y="125.79389"
+         style="stroke-width:0.26458332;font-size:7.05555556px;" /></text>
+    <g
+       id="g119">
+      <rect
+         y="92.136894"
+         x="156.86011"
+         height="65.389885"
+         width="46.491074"
+         id="rect52"
+         style="fill:#b3b3b3;stroke-width:0.1841052" />
+      <text
+         transform="rotate(89.699128)"
+         id="text74"
+         y="-177.39159"
+         x="97.070656"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:7.05555534px;stroke-width:0.26458332"
+           y="-177.39159"
+           x="97.070656"
+           id="tspan72"
+           sodipodi:role="line">Mehrzweckhalle</tspan></text>
+    </g>
+    <g
+       id="g124">
+      <rect
+         y="63.221725"
+         x="135.31548"
+         height="19.087799"
+         width="67.657738"
+         id="rect60"
+         style="fill:#b3b3b3;stroke-width:0.37735283" />
+      <text
+         id="text78"
+         y="75.127968"
+         x="137.9613"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:7.05555534px;stroke-width:0.26458332"
+           y="75.127968"
+           x="137.9613"
+           id="tspan76"
+           sodipodi:role="line">Therapiezimmer</tspan></text>
+    </g>
+    <g
+       id="g129">
+      <rect
+         y="42.622021"
+         x="175.94792"
+         height="20.599703"
+         width="27.025299"
+         id="rect62"
+         style="fill:#b3b3b3;stroke-width:0.19061895" />
+      <text
+         id="text82"
+         y="54.055801"
+         x="177.17633"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:7.05555534px;stroke-width:0.26458332"
+           y="54.055801"
+           x="177.17633"
+           id="tspan80"
+           sodipodi:role="line">Fitness</tspan></text>
+    </g>
+    <path
+       style="fill:#c87137;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 120.69177,99.375487 1.87463,-1.48495 6.65228,-0.0974 2.06324,1.19913 0.13479,-2.799914 -2.01026,-0.889018 -6.82871,-0.213514 -1.95958,1.703929 z"
+       id="path56-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:transform-center-x="7.3717763"
+       inkscape:transform-center-y="0.12213201" />
+    <rect
+       style="fill:#0000ff;stroke-width:0.26458332"
+       id="rect107"
+       width="37.608631"
+       height="16.819941"
+       x="20.599701"
+       y="41.866074" />
+    <rect
+       style="fill:#0000ff;stroke-width:0.26458332"
+       id="rect109"
+       width="20.032738"
+       height="27.403273"
+       x="63.688984"
+       y="36.952377" />
+    <g
+       id="g196">
+      <g
+         id="g187">
+        <ellipse
+           style="fill:#d38d5f;stroke-width:0.31873447"
+           id="path131"
+           cx="98.746277"
+           cy="81.459084"
+           rx="11.244792"
+           ry="12.567708" />
+        <g
+           transform="translate(-3.4962813,-0.28347975)"
+           id="g152">
+          <rect
+             y="64.166664"
+             x="19.654762"
+             height="33.450893"
+             width="78.052086"
+             id="rect99"
+             style="fill:#b3b3b3;stroke-width:0.26458332" />
+          <text
+             id="text103"
+             y="77.055656"
+             x="59.947956"
+             style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               style="font-size:7.05555534px;line-height:1;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+               y="77.055656"
+               x="61.18819"
+               id="tspan101"
+               sodipodi:role="line">Schwimmbad </tspan><tspan
+               id="tspan105"
+               style="font-size:7.05555534px;line-height:1;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+               y="87.638992"
+               x="59.947956"
+               sodipodi:role="line">&amp; SPA</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
