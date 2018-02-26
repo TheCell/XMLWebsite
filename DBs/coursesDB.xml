@@ -1,37 +1,4 @@
 <courses xsi:noNamespaceSchemaLocation="coursesDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <course id="C012">
-        <name>Zoomba</name>
-        <dateFrom>2017-04-23</dateFrom>
-        <dateTo>2018-04-23</dateTo>
-        <reoccurrance>monthly</reoccurrance>
-        <timeFrom>09:20:00</timeFrom>
-        <timeTo>11:15:00</timeTo>
-        <level>intermediate</level>
-        <state>active</state>
-        <maxParticipants>30</maxParticipants>
-        <recommendedFor>Fully mobile</recommendedFor>
-        <language>German</language>
-        <courseReservationIDs>
-            <reservationID>RES100</reservationID>
-            <reservationID>RES012</reservationID>
-        </courseReservationIDs>
-        <description>Workout with music</description>
-    </course>
-    <course id="C123">
-        <name>new years eve</name>
-        <dateFrom>2018-12-31</dateFrom>
-        <dateTo>2030-12-31</dateTo>
-        <reoccurrance>annual</reoccurrance>
-        <timeFrom>20:00:00</timeFrom>
-        <timeTo>24:00:00</timeTo>
-        <level>advanced</level>
-        <state>inactive</state>
-        <maxParticipants>1000</maxParticipants>
-        <recommendedFor>all</recommendedFor>
-        <language>English</language>
-        <courseReservationIDs></courseReservationIDs>
-        <description>New Year party</description>
-    </course>
     <course id="C124">
         <name>Blind climbing</name>
         <dateFrom>2018-03-14</dateFrom>
@@ -46,7 +13,7 @@
         <language>German</language>
         <courseReservationIDs></courseReservationIDs>
         <description>Experience climbing as a blind person. There will be also real blind people to chat and exchange experience.</description>
-    </course>    
+    </course>
     <course id="C125">
         <name>Aqua Training</name>
         <dateFrom>2018-02-10</dateFrom>
@@ -77,7 +44,7 @@
         <courseReservationIDs></courseReservationIDs>
         <description>Swim course for beginners</description>
     </course>
-    <course id="C133">
+    <course id="C134">
         <name>Swimming intermediate</name>
         <dateFrom>2018-02-06</dateFrom>
         <dateTo>2030-12-31</dateTo>
@@ -92,7 +59,7 @@
         <courseReservationIDs></courseReservationIDs>
         <description>Swim course for intermediates</description>
     </course>
-     <course id="C133">
+     <course id="C135">
         <name>Swimming advanced</name>
         <dateFrom>2018-02-08</dateFrom>
         <dateTo>2030-12-31</dateTo>
