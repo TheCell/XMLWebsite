@@ -128,4 +128,10 @@
         <description/>
         <equipment/>
     </room>
+    <room id="R022">
+        <name>Schwimmbad Lager</name>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
 </facilities>
