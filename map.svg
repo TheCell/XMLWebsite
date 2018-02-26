@@ -67,35 +67,38 @@
          d="m 14.93006,251.07589 4.342214,9.25606 29.714003,-30.76478 -3.524825,-28.52346 6.680041,-20.03143 20.410715,-22.11161 43.467262,-16.63095 13.04018,-17.5759 1.70089,-15.875 -0.37798,-8.50446 -3.2128,-89.580357"
          style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
-    <ellipse
-       id="path33"
-       cx="126.622"
-       cy="200.52158"
-       rx="76.540176"
-       ry="42.427826"
-       style="fill:#ff5555;stroke-width:0.26921082" />
-    <rect
-       id="rect31"
-       width="100.73066"
-       height="41.388393"
-       x="75.878716"
-       y="179.27931"
-       style="fill:#008000;stroke-width:0.26458332" />
+    <g
+       id="g115" class="building">
+        <ellipse
+           id="path33"
+           cx="126.622"
+           cy="200.52158"
+           rx="76.540176"
+           ry="42.427826"
+           style="fill:#ff5555;stroke-width:0.26921082" />
+        <rect
+           id="rect31"
+           width="100.73066"
+           height="41.388393"
+           x="75.878716"
+           y="179.27931"
+           style="fill:#008000;stroke-width:0.26458332" />
+        <rect
+           style="fill:#c87137;stroke-width:0.26458332"
+           id="rect58"
+           width="10.961308"
+           height="22.111607"
+           x="63.688984"
+           y="189.27678" />
+    </g>
     <path
        style="fill:#c87137;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 96.152682,151.6318 -2.082468,-1.17586 -2.599976,-6.12393 0.332118,-2.36317 -2.643865,0.93151 -0.06485,2.19711 2.378563,6.40463 2.317311,1.17192 z"
        id="path56"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccc" />
-    <rect
-       style="fill:#c87137;stroke-width:0.26458332"
-       id="rect58"
-       width="10.961308"
-       height="22.111607"
-       x="63.688984"
-       y="189.27678" />
     <g
-       id="g114">
+       id="g114" class="building">
       <rect
          transform="rotate(-26.286571)"
          style="stroke-width:0.26458332;fill:#b3b3b3"
@@ -118,7 +121,7 @@
            sodipodi:role="line">Kletterhalle</tspan></text>
     </g>
     <g
-       id="g119">
+       id="g119" class="building">
       <rect
          y="92.136894"
          x="156.86011"
@@ -140,7 +143,7 @@
            sodipodi:role="line">Mehrzweckhalle</tspan></text>
     </g>
     <g
-       id="g124">
+       id="g124" class="building">
       <rect
          y="63.221725"
          x="135.31548"
@@ -161,7 +164,7 @@
            sodipodi:role="line">Therapiezimmer</tspan></text>
     </g>
     <g
-       id="g129">
+       id="g129" class="building">
       <rect
          y="42.622021"
          x="175.94792"
@@ -189,22 +192,22 @@
        sodipodi:nodetypes="ccccccccc"
        inkscape:transform-center-x="7.3717763"
        inkscape:transform-center-y="0.12213201" />
-    <rect
-       style="fill:#0000ff;stroke-width:0.26458332"
-       id="rect107"
-       width="37.608631"
-       height="16.819941"
-       x="20.599701"
-       y="41.866074" />
-    <rect
-       style="fill:#0000ff;stroke-width:0.26458332"
-       id="rect109"
-       width="20.032738"
-       height="27.403273"
-       x="63.688984"
-       y="36.952377" />
     <g
-       id="g196">
+       id="g196" class="building">
+        <rect
+            style="fill:#0000ff;stroke-width:0.26458332"
+            id="rect107"
+            width="37.608631"
+            height="16.819941"
+            x="20.599701"
+            y="41.866074" />
+         <rect
+            style="fill:#0000ff;stroke-width:0.26458332"
+            id="rect109"
+            width="20.032738"
+            height="27.403273"
+            x="63.688984"
+            y="36.952377" />
         <ellipse
            style="fill:#d38d5f;stroke-width:0.31873447"
            id="path131"
@@ -229,12 +232,12 @@
              y="77.055656"
              x="61.18819"
              id="tspan101"
-             sodipodi:role="line">Schwimmbad </tspan><tspan
+             sodipodi:role="line">Schwimmbad, SPA </tspan><tspan
              id="tspan105"
              style="font-size:7.05555534px;line-height:1;text-align:center;text-anchor:middle;stroke-width:0.26458332"
              y="87.638992"
              x="59.947956"
-             sodipodi:role="line">&amp; SPA</tspan></text>
+             sodipodi:role="line">&amp; Empfang</tspan></text>
     </g>
     <path
        style="fill:#0000ff;stroke-width:0.71428573"
