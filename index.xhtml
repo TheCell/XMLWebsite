@@ -6,19 +6,20 @@
         <title>Sportzentrum Hopfentee</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
         <script type="text/javascript" src="map.js" />
     </head>
     <body onload="init()">
         <div class="header">
             <div id="logo">Place Logo here</div>
             <div class="menu">
-                <div class="menuitem">Anmelden</div>
-                <div class="menuitem">Kalender</div>
-                <div class="menuitem">Angebote</div>
+                <div class="menuitem"><a>Anmelden</a></div>
+                <div class="menuitem"><a>Kalender</a></div>
+                <div class="menuitem"><a>Angebote</a></div>
             </div>
         </div>
         <div class="main">
-            <div>
+            <div class="map">
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -279,7 +280,7 @@
 </svg>
                 
             </div>
-            <div>
+            <div class="news">
                 Place news here
             </div>
         </div>
