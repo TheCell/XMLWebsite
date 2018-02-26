@@ -86,4 +86,99 @@
         <roomID>R022</roomID>
         <description>Ein und Ausstiegshilfe ins Schwimmbecken.</description>
     </item>
+    <item id="E018">
+        <name>Kletterzugseil</name>
+        <roomID>R023</roomID>
+        <description>Kletterunterstützung zur Gewichtsverringerung.</description>
+    </item>
+    <item id="E019">
+        <name>Kletterzugseil</name>
+        <roomID>R023</roomID>
+        <description>Kletterunterstützung zur Gewichtsverringerung.</description>
+    </item>
+    <item id="E020">
+        <name>Gewichte</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E021">
+        <name>Laufband</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E022">
+        <name>Seil</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E023">
+        <name>Brustpresse</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E024">
+        <name>Beinpresse</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E025">
+        <name>Fahrräder</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E026">
+        <name>Rudergerät</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E027">
+        <name>Yogamatten</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E028">
+        <name>Hantelbank</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E029">
+        <name>Kurzhanteln</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E030">
+        <name>Langhantel</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E031">
+        <name>Seilzug</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E032">
+        <name>Blackcurl</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E033">
+        <name>Rückenpresse</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E034">
+        <name>Sprossenwand</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E035">
+        <name>Klimmzugstange</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
+    <item id="E036">
+        <name>Stepper</name>
+        <roomID>R024</roomID>
+        <description></description>
+    </item>
 </equipment>

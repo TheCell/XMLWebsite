@@ -134,4 +134,16 @@
         <description/>
         <equipment/>
     </room>
+    <room id="R023">
+        <name>Kletterhalle Lager</name>
+        <in_building>Kletterhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R024">
+        <name>Fitnessraum</name>
+        <in_building>Fitness</in_building>
+        <description/>
+        <equipment/>
+    </room>
 </facilities>
