@@ -3,21 +3,42 @@
     padding: 0;
 }
 
-#logo {
-    float: left;
-    width: 40%;
+@media only screen and (max-width:480px) {
+    
 }
 
-.menu {
-    float: left;
-    width: 60%;
+@media only screen and (min-width:480px) and (max-width:756px){
+    
 }
 
-.menuitem {
-    float: left;
-    width: 33.333333%;
-}
+@media only screen and (min-width:756px){
+    #logo {
+        float: left;
+        width: 40%;
+    }
+    
+    .main {
+        width: 800px;
+    }
 
-#path35:hover {
-    border: 1px solid red;
+    /*
+    menu
+    */
+    .menu {
+        float: left;
+        width: 60%;
+    }
+
+    .menuitem {
+        float: left;
+        width: 33.333333%;
+    }
+    
+    /*
+    map
+    */
+    .building:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
 }
