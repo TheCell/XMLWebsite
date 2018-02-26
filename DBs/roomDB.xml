@@ -10,7 +10,121 @@
     </room>
     <room id="R002">
         <name>Umkleide Herren</name>
-        <in_building>Hallenbad</in_building>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R003">
+        <name>Umkleide Damen</name>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R004">
+        <name>Umkleide Herren</name>
+        <in_building>Kletterhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R005">
+        <name>Umkleide Damen</name>
+        <in_building>Kletterhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R006">
+        <name>Umkleide Herren</name>
+        <in_building>Mehrzweckhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R007">
+        <name>Umkleide Damen</name>
+        <in_building>Mehrzweckhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R008">
+        <name>Umkleide Herren</name>
+        <in_building>Fitness</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R009">
+        <name>Umkleide Damen</name>
+        <in_building>Fitness</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R010">
+        <name>Kinderbecken</name>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R011">
+        <name>Sauna</name>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R012">
+        <name>Hallenbad</name>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R013">
+        <name>Sportbecken</name>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R014">
+        <name>Kaltwasserbecken</name>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R015">
+        <name>Riverpool</name>
+        <in_building>Schwimmbad</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R016">
+        <name>Trainingsbereich</name>
+        <in_building>Kletterhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R017">
+        <name>Boulderbereich</name>
+        <in_building>Kletterhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R018">
+        <name>Kletterwand Ost</name>
+        <in_building>Kletterhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R019">
+        <name>Kletterwand Nord</name>
+        <in_building>Kletterhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R020">
+        <name>Kletterwand West</name>
+        <in_building>Kletterhalle</in_building>
+        <description/>
+        <equipment/>
+    </room>
+    <room id="R021">
+        <name>Klettersäule</name>
+        <in_building>Kletterhalle</in_building>
         <description/>
         <equipment/>
     </room>
