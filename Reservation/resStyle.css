@@ -1,0 +1,48 @@
+@import "compass/css3";
+
+.tabs {
+    position: relative;
+    width: 25em;
+    list-style: none;
+    padding: 0;
+}
+
+.tabs li {
+    float: left;
+}
+
+.trigger {
+    display: block;
+    padding: 0 .5em;
+    width: 4em;
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content {
+    display:none;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    padding: 0 .5em;
+}
+
+li:target .content,
+li:last-child .content{
+    display: block;
+}
+
+li:target .trigger,
+li:last-child .trigger{
+    color: #000;
+}
+
+li:target ~ li:last-child .content {
+    display: none;
+}
+
+li:target ~ li:last-child .trigger {
+    color: #aaa;
+}
