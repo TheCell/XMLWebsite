@@ -24,8 +24,8 @@
                 <xs:element name="reoccurrance" type="occurance"/>
                 <xs:element name="timeFrom" type="xs:time"/>
                 <xs:element name="timeTo" type="xs:time"/>
-                <xs:element name="level" type="xs:string">
-                <!--todo: @simon enum für level (evtl. recommended too)-->
+                <xs:element name="level" type="levels">
+                <!--todo: @simon evtl. enum recommended too)-->
                 </xs:element>
                 <xs:element name="state" type="stateType"/>
                 <xs:element name="maxParticipants" type="xs:int"/>
@@ -48,24 +48,32 @@
 
     <xs:simpleType name="occurance">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="once"/>
-            <xs:enumeration value="daily"/>
-            <xs:enumeration value="weekly"/>
-            <xs:enumeration value="monthly"/>
-            <xs:enumeration value="annual"/>
+            <xs:enumeration value="einmalig"/>
+            <xs:enumeration value="täglich"/>
+            <xs:enumeration value="wöchentlich"/>
+            <xs:enumeration value="monatlich"/>
+            <xs:enumeration value="jährlich"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="levels">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Anfänger"/>
+            <xs:enumeration value="Fortgeschrittene"/>
+            <xs:enumeration value="Profi"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="stateType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="active"/>
-            <xs:enumeration value="inactive"/>
+            <xs:enumeration value="aktiv"/>
+            <xs:enumeration value="inaktiv"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="lang">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="German"/>
+            <xs:enumeration value="Deutsch"/>
             <xs:enumeration value="English"/>
             <!--More following?-->
         </xs:restriction>
