@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Sportzentrum Hopfentee</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+        <script type="text/javascript" src="map.js" />
+    </head>
+    <body onload="init()">
+        <div class="header">
+            <div id="logo">Place Logo here</div>
+            <div class="menu">
+                <div class="menuitem"><a>Anmelden</a></div>
+                <div class="menuitem"><a>Kalender</a></div>
+                <div class="menuitem"><a>Angebote</a></div>
+            </div>
+        </div>
+   <div class="reservation">
+      <h1>Reservierung</h1>
+      <form method="post" action="reservation.xhtml">
+		<p>Geräte- oder RaumID: <input type="text" name="id"/></p>
+		<p>Reservieren von: <input type="date" name="dateFrom"/> bis: <input type="date" name="dateTo"/></p>
+		<p>von: <input type="time" name="timeFrom"/> bis: <input type="time" name="timeTo"/></p>
+        <p class="submit"><input type="submit" name="commit" value="Login"/></p>
+      </form>
+    </div>
+    </body>
+</html>
