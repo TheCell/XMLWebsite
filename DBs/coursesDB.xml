@@ -1,77 +1,110 @@
 <courses xsi:noNamespaceSchemaLocation="coursesDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <course id="C012">
+        <name>Zumba</name>
+        <dateFrom>2017-04-23</dateFrom>
+        <dateTo>2018-04-23</dateTo>
+        <reoccurrance>monatlich</reoccurrance>
+        <timeFrom>09:20:00</timeFrom>
+        <timeTo>11:15:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>30</maxParticipants>
+        <recommendedFor>Fully mobile</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs>
+            <reservationID>RES100</reservationID>
+            <reservationID>RES012</reservationID>
+        </courseReservationIDs>
+        <description>Workout mit Musik</description>
+    </course>
+    <course id="C123">
+        <name>Neujahrsabend</name>
+        <dateFrom>2018-12-31</dateFrom>
+        <dateTo>2030-12-31</dateTo>
+        <reoccurrance>j�hrlich</reoccurrance>
+        <timeFrom>20:00:00</timeFrom>
+        <timeTo>24:00:00</timeTo>
+        <level>Profi</level>
+        <state>inaktiv</state>
+        <maxParticipants>1000</maxParticipants>
+        <recommendedFor>Alle</recommendedFor>
+        <language>English</language>
+        <courseReservationIDs></courseReservationIDs>
+        <description>Rein feiern ins neue Jahr mit Spassspielen wie Volleyball, Fussball, etc.</description>
+    </course>
     <course id="C124">
-        <name>Blind climbing</name>
+        <name>Blindes Klettern</name>
         <dateFrom>2018-03-14</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>monthly</reoccurrance>
+        <reoccurrance>monatlich</reoccurrance>
         <timeFrom>18:30:00</timeFrom>
         <timeTo>19:30:00</timeTo>
-        <level>beginner</level>
-        <state>inactive</state>
+        <level>Anf�nger</level>
+        <state>inaktiv</state>
         <maxParticipants>15</maxParticipants>
-        <recommendedFor>all</recommendedFor>
-        <language>German</language>
+        <recommendedFor>Alle</recommendedFor>
+        <language>Deutsch</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>Experience climbing as a blind person. There will be also real blind people to chat and exchange experience.</description>
+        <description>Erfahre Klettern wie eine blinde Person. Man kann sich zus�tzlich mit blinden austauschen und Erfahrungen teilen.</description>
     </course>
     <course id="C125">
         <name>Aqua Training</name>
         <dateFrom>2018-02-10</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>weekly</reoccurrance>
+        <reoccurrance>w�chentlich</reoccurrance>
         <timeFrom>09:45:00</timeFrom>
         <timeTo>10:30:00</timeTo>
-        <level>beginner</level>
-        <state>inactive</state>
+        <level>Anf�nger</level>
+        <state>inaktiv</state>
         <maxParticipants>25</maxParticipants>
-        <recommendedFor>all</recommendedFor>
+        <recommendedFor>Alle</recommendedFor>
         <language>English</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>New Year party</description>
+        <description>Muskelaufbautraining im Schwimmbad</description>
     </course>
     <course id="C133">
-        <name>Swimming beginner</name>
+        <name>Schwimmen f�r Anf�nger</name>
         <dateFrom>2018-02-05</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>weekly</reoccurrance>
+        <reoccurrance>w�chentlich</reoccurrance>
         <timeFrom>20:15:00</timeFrom>
         <timeTo>21:00:00</timeTo>
-        <level>beginner</level>
-        <state>inactive</state>
+        <level>Anf�nger</level>
+        <state>inaktiv</state>
         <maxParticipants>10</maxParticipants>
         <recommendedFor>normal</recommendedFor>
-        <language>German</language>
+        <language>Deutsch</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>Swim course for beginners</description>
+        <description>Schwimmkurs f�r Anf�nger</description>
     </course>
     <course id="C134">
-        <name>Swimming intermediate</name>
+        <name>Schwimmen f�r Fortgeschrittene</name>
         <dateFrom>2018-02-06</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>weekly</reoccurrance>
+        <reoccurrance>w�chentlich</reoccurrance>
         <timeFrom>20:15:00</timeFrom>
         <timeTo>21:00:00</timeTo>
-        <level>intermediate</level>
-        <state>inactive</state>
+        <level>Fortgeschrittene</level>
+        <state>inaktiv</state>
         <maxParticipants>10</maxParticipants>
         <recommendedFor>normal</recommendedFor>
-        <language>German</language>
+        <language>Deutsch</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>Swim course for intermediates</description>
+        <description>Schwimmkurs f�r Fortgeschrittene</description>
     </course>
      <course id="C135">
-        <name>Swimming advanced</name>
+        <name>Schwimmtraining f�r Profis</name>
         <dateFrom>2018-02-08</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>weekly</reoccurrance>
+        <reoccurrance>w�chentlich</reoccurrance>
         <timeFrom>20:15:00</timeFrom>
         <timeTo>21:00:00</timeTo>
-        <level>advanced</level>
-        <state>inactive</state>
+        <level>Profi</level>
+        <state>inaktiv</state>
         <maxParticipants>10</maxParticipants>
         <recommendedFor>normal</recommendedFor>
-        <language>German</language>
+        <language>Deutsch</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>Swim course for advanced</description>
+        <description>Schwimmtraining f�r Profis</description>
     </course>
 </courses>
