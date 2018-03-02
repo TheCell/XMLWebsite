@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Reservation.xsl"?>
 <sc:Reservation xmlns:sc="www.hslu.ch/xml"
           xmlns="http://www.w3.org/1999/xhtml"
           xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
@@ -13,9 +14,8 @@
         <li id="courses">
             <a href="#courses" class="trigger">Kurse</a>
             <div class="content">
-                <textarea>Kurs ID</textarea>
-                <time>zeit auswählen</time>
-                <button>Reservieren</button>
+                document(CoursesList.xml)
+                <link rel="preload" type="text/xml" href="../DBs/XSL_Summary_XML/CourseList.xml"/>
             </div>
         </li>
         <li id="rooms">
