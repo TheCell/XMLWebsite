@@ -21,7 +21,7 @@
         <name>Neujahrsabend</name>
         <dateFrom>2018-12-31</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>j�hrlich</reoccurrance>
+        <reoccurrance>jährlich</reoccurrance>
         <timeFrom>20:00:00</timeFrom>
         <timeTo>24:00:00</timeTo>
         <level>Profi</level>
@@ -39,7 +39,7 @@
         <reoccurrance>monatlich</reoccurrance>
         <timeFrom>18:30:00</timeFrom>
         <timeTo>19:30:00</timeTo>
-        <level>Anf�nger</level>
+        <level>Anfänger</level>
         <state>inaktiv</state>
         <maxParticipants>15</maxParticipants>
         <recommendedFor>Alle</recommendedFor>
@@ -51,10 +51,10 @@
         <name>Aqua Training</name>
         <dateFrom>2018-02-10</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>w�chentlich</reoccurrance>
+        <reoccurrance>wöchentlich</reoccurrance>
         <timeFrom>09:45:00</timeFrom>
         <timeTo>10:30:00</timeTo>
-        <level>Anf�nger</level>
+        <level>Anfänger</level>
         <state>inaktiv</state>
         <maxParticipants>25</maxParticipants>
         <recommendedFor>Alle</recommendedFor>
@@ -63,25 +63,25 @@
         <description>Muskelaufbautraining im Schwimmbad</description>
     </course>
     <course id="C133">
-        <name>Schwimmen f�r Anf�nger</name>
+        <name>Schwimmen für Anf�nger</name>
         <dateFrom>2018-02-05</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>w�chentlich</reoccurrance>
+        <reoccurrance>wöchentlich</reoccurrance>
         <timeFrom>20:15:00</timeFrom>
         <timeTo>21:00:00</timeTo>
-        <level>Anf�nger</level>
+        <level>Anfänger</level>
         <state>inaktiv</state>
         <maxParticipants>10</maxParticipants>
         <recommendedFor>normal</recommendedFor>
         <language>Deutsch</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>Schwimmkurs f�r Anf�nger</description>
+        <description>Schwimmkurs für Anfänger</description>
     </course>
     <course id="C134">
-        <name>Schwimmen f�r Fortgeschrittene</name>
+        <name>Schwimmen für Fortgeschrittene</name>
         <dateFrom>2018-02-06</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>w�chentlich</reoccurrance>
+        <reoccurrance>wöchentlich</reoccurrance>
         <timeFrom>20:15:00</timeFrom>
         <timeTo>21:00:00</timeTo>
         <level>Fortgeschrittene</level>
@@ -90,13 +90,13 @@
         <recommendedFor>normal</recommendedFor>
         <language>Deutsch</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>Schwimmkurs f�r Fortgeschrittene</description>
+        <description>Schwimmkurs für Fortgeschrittene</description>
     </course>
      <course id="C135">
-        <name>Schwimmtraining f�r Profis</name>
+        <name>Schwimmtraining für Profis</name>
         <dateFrom>2018-02-08</dateFrom>
         <dateTo>2030-12-31</dateTo>
-        <reoccurrance>w�chentlich</reoccurrance>
+        <reoccurrance>wöchentlich</reoccurrance>
         <timeFrom>20:15:00</timeFrom>
         <timeTo>21:00:00</timeTo>
         <level>Profi</level>
@@ -105,6 +105,6 @@
         <recommendedFor>normal</recommendedFor>
         <language>Deutsch</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>Schwimmtraining f�r Profis</description>
+        <description>Schwimmtraining für Profis</description>
     </course>
 </courses>
