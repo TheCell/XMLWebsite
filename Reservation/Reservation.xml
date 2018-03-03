@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Reservation.xsl"?>
+<sc:Reservation xmlns:sc="www.hslu.ch/xml"
+                xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
+    <list>
+        <courses name="..\DBs\coursesDB.xml"/>
+        <equip name="..\DBs\equipmentDB.xml"/>
+        <rooms name="..\DBs\roomDB.xml"/>
+
+        <reservation name="..\DB\reservationsDB.xml"/>
+    </list>
+</sc:Reservation>

@@ -40,7 +40,7 @@
         <timeFrom>18:30:00</timeFrom>
         <timeTo>19:30:00</timeTo>
         <level>Anfänger</level>
-        <state>inaktiv</state>
+        <state>aktiv</state>
         <maxParticipants>15</maxParticipants>
         <recommendedFor>Alle</recommendedFor>
         <language>Deutsch</language>
