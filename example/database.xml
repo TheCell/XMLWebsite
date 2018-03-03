@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+roses are red
+violets are blue
+there is an error
+on line 32
+-->
+<sc:sportcenter
+    xmlns:sc="https://thecell.eu/xmlsportcenter"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
+    <sc:courses>
+        <sc:course>
+            <sc:name>Klettern</sc:name>
+            <sc:building>Kletterhalle</sc:building>
+        </sc:course>
+        <sc:course>
+            <sc:name>Schwimmen</sc:name>
+            <sc:building>Schwimmbad</sc:building>
+        </sc:course>
+    </sc:courses>
+</sc:sportcenter>
