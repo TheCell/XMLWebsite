@@ -6,7 +6,6 @@
         <courses name="..\DBs\coursesDB.xml"/>
         <equip name="..\DBs\equipmentDB.xml"/>
         <rooms name="..\DBs\roomDB.xml"/>
-
         <reservation name="..\DB\reservationsDB.xml"/>
     </list>
 </sc:Reservation>
