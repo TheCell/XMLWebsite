@@ -45,7 +45,7 @@
         <recommendedFor>Alle</recommendedFor>
         <language>Deutsch</language>
         <courseReservationIDs></courseReservationIDs>
-        <description>Erfahre Klettern wie eine blinde Person. Man kann sich zus�tzlich mit blinden austauschen und Erfahrungen teilen.</description>
+        <description>Erfahre Klettern wie eine blinde Person. Man kann sich zusätzlich mit blinden austauschen und Erfahrungen teilen.</description>
     </course>
     <course id="C125">
         <name>Aqua Training</name>
@@ -63,7 +63,7 @@
         <description>Muskelaufbautraining im Schwimmbad</description>
     </course>
     <course id="C133">
-        <name>Schwimmen für Anf�nger</name>
+        <name>Schwimmen für Anfänger</name>
         <dateFrom>2018-02-05</dateFrom>
         <dateTo>2030-12-31</dateTo>
         <reoccurrance>wöchentlich</reoccurrance>
