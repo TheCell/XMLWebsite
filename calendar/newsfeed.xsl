@@ -4,8 +4,12 @@
 				xmlns:sc="https://thecell.eu/xmlsportcenter" 
 				xmlns:xhtml="http://www.w3.org/1999/xhtml"
 				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:date="http://exslt.org/dates-and-times" 
+				extension-element-prefixes="date"
 				version="1.0">
+
     <xsl:output method="html"/>
+	<xsl:import href="../dateAndTimes/date.xsl" />
 
     <!-- Don't match / cause we have 2 xml files
 		(index.xml and database.xml that match) Recursin incoming -->
@@ -43,7 +47,9 @@
     </xsl:template>
     
     <!-- create templates for the database entries -->
-    <xsl:template match="//course">
+    <!--<xsl:template match="//course[xs:date(./dateTo/text()) > xs:date()]">-->
+	<xsl:template match="//course">
+		<!--<xsl:value-of  select="current-dateTime()"/>-->
 		<div class="feedDate">
 			<xsl:value-of select="dateFrom/text()" />
 		</div>
