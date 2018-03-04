@@ -23,7 +23,7 @@
 							<a>Anmelden</a>
 						</div>
 						<div class="menuitem">
-							<a href="calendar/calendar.xhtml">Kalender</a>
+							<a href="calendar.xhtml">Kalender</a>
 						</div>
 						<div class="menuitem">
 							<a>Angebote</a>
@@ -31,18 +31,44 @@
 					</div>
 				</div>
                 <h1>Kalender</h1>
-                Kurse: <ul>
-                    <!-- Load the database and apply templates -->
-                    <xsl:apply-templates 
+				<!-- Load the database and apply templates -->
+				<div class="calendar">
+					<div class="zeroToFour">
+						00:00 - 04:00
+					</div>
+					<div class="FourToEight">
+						04:00 - 08:00
+					</div>
+					<div class="EightToTwelve">
+						08:00 - 12:00
+					</div>
+					<div class="TwelveToSixteen">
+						12:00 - 16:00
+					</div>
+					<div class="SixteenToTwenty">
+						16:00 - 20:00
+					</div>
+					<div class="TwentyToTwentyfour">
+						20:00 - 24:00
+					</div>
+					<div class="dayOne"></div>
+					<div class="dayTwo"></div>
+					<div class="dayThree"></div>
+					<div class="dayFour"></div>
+					<div class="dayFive"></div>
+					
+					<xsl:apply-templates 
 						select="document('../DBs/coursesDB.xml')"/>
-                </ul>
+				</div>
             </body>
         </html>
     </xsl:template>
     
     <!-- create templates for the database entries -->
-    <xsl:template match="sc:course">
-        <li><xsl:value-of select="sc:name/text()" /></li>
+    <xsl:template match="course">
+		<div class="calendarItem">
+			<xsl:value-of select="name/text()" />
+		</div>
     </xsl:template>
     
 </xsl:stylesheet>
