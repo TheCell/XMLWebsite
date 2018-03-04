@@ -8,8 +8,10 @@
 				extension-element-prefixes="date"
 				version="1.0">
 
-    <xsl:output method="html"/>
+	<xsl:output method="html"/>
+    <!--
 	<xsl:import href="../dateAndTimes/date.xsl" />
+	-->
 
     <!-- Don't match / cause we have 2 xml files
 		(index.xml and database.xml that match) Recursin incoming -->
