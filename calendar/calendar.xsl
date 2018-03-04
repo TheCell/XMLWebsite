@@ -32,6 +32,7 @@
 				</div>
                 <h1>Kalender</h1>
 				<!-- Load the database and apply templates -->
+				
 				<div class="calendar">
 					<div class="zeroToFour">
 						00:00 - 04:00
@@ -65,10 +66,30 @@
     </xsl:template>
     
     <!-- create templates for the database entries -->
-    <xsl:template match="course">
+	<xsl:template match="courses">
+		<div class="recommendedFor">
+			<xsl:value-of select="$recommendedFor" />
+			
+			<xsl:for-each select="course">
+				<xsl:call-template name="course">
+					<!--<xsl:with-param name="title" select = "title" />-->
+					<xsl:with-param name="recommendedFor" />
+				</xsl:call-template>
+			</xsl:for-each>
+		</div>
+	</xsl:template>
+	
+	<xsl:template name="course" >
+		<xsl:param name="recommendedFor" />
+		<p>Title: <xsl:value-of select="$recommendedFor" /></p>
+	</xsl:template>
+	
+    <!--
+	<xsl:template match="course">
 		<div class="calendarItem">
 			<xsl:value-of select="name/text()" />
 		</div>
     </xsl:template>
+	-->
     
 </xsl:stylesheet>
