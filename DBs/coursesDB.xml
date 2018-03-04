@@ -1,4 +1,80 @@
 <courses xsi:noNamespaceSchemaLocation="coursesDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <course id="C001">
+        <name>Bouldern</name>
+        <dateFrom>2018-04-05</dateFrom>
+        <dateTo>2018-04-05</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>10:00:00</timeFrom>
+        <timeTo>13:00:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Alle</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Gemeinsames Bouldern</description>
+    </course>
+    <course id="C002">
+        <name>Klettern</name>
+        <dateFrom>2018-04-05</dateFrom>
+        <dateTo>2018-04-05</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Anfänger</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Klettern als Gruppe</description>
+    </course>
+    <course id="C003">
+        <name>Klettern</name>
+        <dateFrom>2018-04-07</dateFrom>
+        <dateTo>2018-04-07</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Profi</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Geistig eingeschränkt</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Klettertraining</description>
+    </course>
+    <course id="C004">
+        <name>Klettern</name>
+        <dateFrom>2018-04-07</dateFrom>
+        <dateTo>2018-04-07</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Anfänger</level>
+        <state>aktiv</state>
+        <maxParticipants>20</maxParticipants>
+        <recommendedFor>Normal, Geistig eingeschränkt, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Kletterplausch</description>
+    </course>
+    <course id="C005">
+        <name>Bouldern</name>
+        <dateFrom>2018-04-15</dateFrom>
+        <dateTo>2018-04-15</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>20</maxParticipants>
+        <recommendedFor>Normal, Geistig eingeschränkt, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Bouldern als Gruppe</description>
+    </course>
+    <!--
     <course id="C012">
         <name>Zumba</name>
         <dateFrom>2017-04-23</dateFrom>
@@ -107,4 +183,5 @@
         <courseReservationIDs></courseReservationIDs>
         <description>Schwimmtraining für Profis</description>
     </course>
+    -->
 </courses>
