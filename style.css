@@ -11,7 +11,7 @@
 }
 
 @media only screen and (min-width:756px){
-    body:after {
+/*    body:after {
         background: url(paralympics.jpg);
         bottom: 0;
         content: "";
@@ -20,7 +20,7 @@
         right: 0;
         top: 0;
         z-index: -1; 
-    }
+    }*/
     
     .header {
         color: #FFF;
@@ -34,13 +34,99 @@
     }
 
     #logo {
-        background: rgba(0,0,0,0.5);
-        float: left;
-        padding: 25px;
-        width: 40%;
+        margin: 0 auto;
+        padding: 15px;
+        width: 1000px;
     }
     
-    main:before {
+    #logo img {
+        height: 100px;
+    }
+    
+    .teaser {
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .teaser:after {
+        content: "";
+        clear: both;
+        display: block;
+        line-height: 0;
+    }
+    
+    .teaser-nav {
+        background: #FFF;
+        display: block;
+        position: absolute;
+        top: 160px;
+        z-index: 100;
+    }
+    
+    .teaser-nav-left {
+        left: 0;
+    }
+    
+    .teaser-nav-right {
+        right: 0;
+    }
+    
+    .teaser-nav a {
+        display: block;
+        font-size: 24px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        width: 30px;
+        z-index: 200;
+    }
+    
+    .teaser .teaser-item {
+        float: left;
+        height: 350px;
+        left: 100%;
+        opacity: 0;
+        position: absolute;
+        -webkit-transition: visibility 1s ease-out, opacity 1s ease-out, left 1s linear; /* Safari */
+        transition: visibility 1s ease-out, opacity 1s ease-out, left 1s linear;
+        width: 100%;
+        visibility: hidden;
+    }
+    
+    .teaser .teaser-item:target {
+/*        left: 0%;*/
+        opacity: 1;
+        -webkit-transition: visibility 1s ease-in, opacity 1s ease-in, left 1s linear; /* Safari */
+        transition: visibility 1s ease-in, opacity 1s ease-in, left 1s linear;
+        visibility: visible;
+        z-index: 10;
+    }
+    
+    .teaser .teaser-item-image {
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    .teaser .teaser-item-image img {
+        position: absolute;
+        top: -175px;
+    }
+    
+    .teaser .teaser-item-text {
+        color: #FFF;
+        font-size: 42px;
+        font-weight: bold;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+    
+/*    main:before {
         bottom: 0;
         display: block;
         content: "";
@@ -51,14 +137,14 @@
         top: 0;
         left: 0;
         right: 0;
-    }
+    }*/
     
     .main {
         background: rgba(255,255,255,0.8);
         color: #000;
         margin: 0 auto;
         padding: 25px 0;
-        width: 750px;
+        width: 1000px;
     }
     
     .main:after {
@@ -68,38 +154,60 @@
         line-height: 0;
     }
     
-    .footer {
-        background: rgba(0,0,0,0.5);
-        bottom: 0;
-        color: #FFF;
-        padding: 25px;
-        position: fixed;
+    .main .section-title {
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+        font-size: 24px;
         width: 100%;
+    }
+    
+    .footer {
+        background: rgba(0,0,0,0.8);
+        color: #FFF;
+        width: 100%;
+    }
+    
+    .footeritems {
+        margin: 0 auto;
+        padding: 15px;
+        width: 1000px;
     }
 
     /*
     menu
     */
     .menu {
-        float: left;
-        width: 60%;
+        background: rgba(0,0,0,0.8);
+        width: 100%;
+    }
+    
+    .menuitems {
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 1000px;
+    }
+    
+    .menuitems:after {
+        content: "";
+        clear: both;
+        display: block;
+        line-height: 0;
     }
 
     .menuitem {
-        background: rgba(0,0,0,0.5);
         color: #FFF;
         float: left;
         font-size: 24px;
-        width: 33.333333%;
     }
     
     .menuitem a {
+        color: #FFF;
         display: block;
-        padding: 25px;
+        padding: 10px;
+        text-decoration: none;
     }
     
     .menuitem:hover {
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.8);
         color: #000;
         cursor: pointer;
         transition: background-color 0.5s ease;
@@ -110,6 +218,7 @@
     */
     .map {
         float: left;
+        padding: 0 15px;
         width: 60%;
     }
     
@@ -127,6 +236,7 @@
     */
     .news {
         float: left;
+        padding: 0 15px;
         width: 40%;
     }
 }

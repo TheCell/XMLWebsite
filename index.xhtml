@@ -11,15 +11,62 @@
     </head>
     <body onload="init()">
         <div class="header">
-            <div id="logo">Place Logo here</div>
+            <div id="logo">
+                <img alt="Logo von Sportzentrum Hopfentee" src="Logo.png"/>
+            </div>
             <div class="menu">
-                <div class="menuitem"><a>Anmelden</a></div>
-                <div class="menuitem"><a href="calendar/calendar.xhtml">Kalender</a></div>
-                <div class="menuitem"><a>Angebote</a></div>
+                <div class="menuitems">
+                    <div class="menuitem"><a>Anmelden</a></div>
+                    <div class="menuitem"><a href="calendar/calendar.xhtml">Kalender</a></div>
+                    <div class="menuitem"><a>Angebote</a></div>
+                </div>
+            </div>
+            <div class="teaser">
+                <div id="item-1" class="teaser-item ">
+                    <div class="teaser-item-image">
+                        <img alt="Schwimmbad aussen" src="anlage.jpg" />
+                        <div class="teaser-item-text">
+                            <span>Geniessen Sie die Freiheit</span>
+                        </div>
+                    </div>
+                    <div class="teaser-nav teaser-nav-right">
+                        <a href="#item-2">
+                            &gt;
+                        </a>
+                    </div>
+                </div>
+                <div id="item-2" class="teaser-item">
+                    <div class="teaser-item-image">
+                        <img alt="Klettern mit Protese" src="klettern2.jpg" />
+                    </div>
+                    <div class="teaser-nav teaser-nav-left">
+                        <a href="#item-1">
+                            &lt;
+                        </a>
+                    </div>
+                    <div class="teaser-nav teaser-nav-right">
+                        <a href="#item-3">
+                            &gt;
+                        </a>
+                    </div>
+                </div>
+                <div id="item-3" class="teaser-item">
+                    <div class="teaser-item-image">
+                        <img alt="Schweizer Rollstuhlfahrer bei einem Rennen" src="paralympics.jpg" />
+                    </div>
+                    <div class="teaser-nav teaser-nav-left">
+                        <a href="#item-2">
+                            &lt;
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="main">
             <div class="map">
+                <div class="section-title">
+                    Übersichtskarte
+                </div>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -380,12 +427,17 @@
                 
             </div>
             <div class="news">
+                <div class="section-title">
+                    Neuigkeiten
+                </div>
                 Place news here
             </div>
         </div>
         <div class="footer">
-            <div class="impressum">Place impressum here</div>
-            <div class="copyright">Place copyright here</div>
+            <div class="footeritems">
+                <div class="impressum">Place impressum here</div>
+                <div class="copyright">Place copyright here</div>
+            </div>
         </div>
     </body>
 </html>
