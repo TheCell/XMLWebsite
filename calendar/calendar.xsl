@@ -33,6 +33,24 @@
                 <h1>Kalender</h1>
 				<!-- Load the database and apply templates -->
 				
+				<div class="recommendedSelection">
+					<form type="submit" method="get" action="calendar.php" >
+						<input type="radio" name="recommendedFor" value="Alle" >
+							Alle
+						</input>
+						<input type="radio" name="recommendedFor" value="Normal" >
+							Normal
+						</input>
+						<input type="radio" name="recommendedFor" value="Amputation" >
+							Amputation
+						</input>
+						<input type="radio" name="recommendedFor" value="Geistig eingeschränkt" >
+							Geistig eingeschränkt
+						</input>
+						<input type="submit" value="Senden" />
+					</form>
+				</div>
+				
 				<div class="calendar">
 					<div class="zeroToFour">
 						00:00 - 04:00
@@ -68,13 +86,17 @@
     <!-- create templates for the database entries -->
 	<xsl:template match="courses">
 		<div class="recommendedFor">
-			<xsl:value-of select="$recommendedFor" />
+			<!-- <xsl:value-of select="$recommendedFor" /> -->
 			
 			<xsl:for-each select="course[contains(.,$recommendedFor)]">
 				<xsl:call-template name="course">
 					<!--<xsl:with-param name="title" select = "title" />-->
 					<xsl:with-param name="recommendedFor"
 									select="$recommendedFor" />
+					<xsl:with-param name="currentDate"
+									select="$currentDate" />
+					<xsl:with-param name="currentTime"
+									select="$currentTime" />
 				</xsl:call-template>
 			</xsl:for-each>
 			<!--<xsl:apply-templates />-->
@@ -83,8 +105,47 @@
 	
 	<xsl:template name="course" >
 		<xsl:param name="recommendedFor" />
-		<p>Title: <xsl:value-of select="$recommendedFor" /></p>
-		Name: <xsl:value-of select="name" />
+		<xsl:param name="currentDate" />
+		<xsl:param name="currentTime" />
+		<div>
+			<xsl:choose>
+			 <xsl:when 
+				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 200000">
+				 <span class="divAttrib timeTwentyToTwentyFour"></span>
+			 </xsl:when>
+			 <xsl:when 
+				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 160000">
+				 <span class="divAttrib timeSixteenToTwenty"></span>
+			 </xsl:when>
+			 <xsl:when 
+				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 120000">
+				 <span class="divAttrib timeTwelveToSixteen"></span>
+			 </xsl:when>
+			 <xsl:when 
+				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 080000">
+				 <span class="divAttrib timeEightToTwelve"></span>
+			 </xsl:when>
+			 <xsl:when 
+				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 040000">
+				 <span class="divAttrib timeFourToEight"></span>
+			 </xsl:when>
+			 <xsl:otherwise>
+				 <span class="divAttrib timeZeroToEight"></span>
+			 </xsl:otherwise>
+		   </xsl:choose>
+			<p>Parameter: <xsl:value-of select="$recommendedFor" />
+			<br />
+			<xsl:value-of select="$currentDate" />
+			<br />
+			<xsl:value-of select="$currentTime" />
+			<br />
+			<xsl:value-of select="number(translate(substring(timeFrom/text(),1,8),':',''))" />
+
+			</p>
+			Name: <xsl:value-of select="name" />
+			Datum: <xsl:value-of select="dateFrom" />
+			Zeitpunkt: <xsl:value-of select="timeFrom" />
+		</div>
 	</xsl:template>
 	
 	<!-- test

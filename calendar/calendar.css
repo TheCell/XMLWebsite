@@ -110,3 +110,9 @@ body:after
 	grid-column: 1 / 7;
 	grid-row: 7;
 }
+
+div:has( .divAttrib.timeEightToTwelve)
+{
+	grid-row: 4;
+	background-color: red;
+}
