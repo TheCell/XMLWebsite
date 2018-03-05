@@ -18,7 +18,7 @@ $xsl->load('calendar.xsl');
 // transform
 $processor = new XSLTProcessor();
 $processor->importStylesheet($xsl);
-$processor->setParameter('', 'recommendedFor', 'superparam');
+$processor->setParameter('', 'recommendedFor', 'Alle');
 $dom = $processor->transformToDoc($xml);
 
 // send result to client
