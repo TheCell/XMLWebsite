@@ -70,19 +70,32 @@
 		<div class="recommendedFor">
 			<xsl:value-of select="$recommendedFor" />
 			
-			<xsl:for-each select="course">
+			<xsl:for-each select="course[contains(.,$recommendedFor)]">
 				<xsl:call-template name="course">
 					<!--<xsl:with-param name="title" select = "title" />-->
-					<xsl:with-param name="recommendedFor" />
+					<xsl:with-param name="recommendedFor"
+									select="$recommendedFor" />
 				</xsl:call-template>
 			</xsl:for-each>
+			<!--<xsl:apply-templates />-->
 		</div>
 	</xsl:template>
 	
 	<xsl:template name="course" >
 		<xsl:param name="recommendedFor" />
 		<p>Title: <xsl:value-of select="$recommendedFor" /></p>
+		Name: <xsl:value-of select="name" />
 	</xsl:template>
+	
+	<!-- test
+	<xsl:template match="course[contains(.,'Alle')]">
+		<br />
+		<br />
+		matched alle: <xsl:value-of select="name/text()" /> tada.
+		<br />
+		<br />
+	</xsl:template>
+	-->
 	
     <!--
 	<xsl:template match="course">
