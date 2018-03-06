@@ -107,32 +107,35 @@
 		<xsl:param name="recommendedFor" />
 		<xsl:param name="currentDate" />
 		<xsl:param name="currentTime" />
-		<div>
+		<xsl:variable name="dayTime">
 			<xsl:choose>
 			 <xsl:when 
 				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 200000">
-				 <span class="divAttrib timeTwentyToTwentyFour"></span>
+				 divAttrib timeTwentyToTwentyFour
+				 <xsl:value-of select="root/info/title" />
 			 </xsl:when>
 			 <xsl:when 
 				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 160000">
-				 <span class="divAttrib timeSixteenToTwenty"></span>
+				 divAttrib timeSixteenToTwenty
 			 </xsl:when>
 			 <xsl:when 
 				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 120000">
-				 <span class="divAttrib timeTwelveToSixteen"></span>
+				 divAttrib timeTwelveToSixteen
 			 </xsl:when>
 			 <xsl:when 
 				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 080000">
-				 <span class="divAttrib timeEightToTwelve"></span>
+				 divAttrib timeEightToTwelve
 			 </xsl:when>
 			 <xsl:when 
 				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 040000">
-				 <span class="divAttrib timeFourToEight"></span>
+				 divAttrib timeFourToEight
 			 </xsl:when>
 			 <xsl:otherwise>
-				 <span class="divAttrib timeZeroToEight"></span>
+				 divAttrib timeZeroToEight
 			 </xsl:otherwise>
 		   </xsl:choose>
+		</xsl:variable>
+		<div class="{$dayTime}">
 			<p>Parameter: <xsl:value-of select="$recommendedFor" />
 			<br />
 			<xsl:value-of select="$currentDate" />
