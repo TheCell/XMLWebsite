@@ -12,7 +12,19 @@
                 <ul class="tabs">
                     <li id="reservation">
                         <div class="content">
-                            TBD
+                            <h1>Reservieren von:</h1>
+                            <form name="myform" method="POST" action="process.php">
+                                <p>Name: <input type="text" name="username" value=""/></p>
+                                <p>Reservieren von: <input type="date" name="dateFrom" value=""/></p>
+                                
+                                <p>bis: <input type="date" name="dateTo" value=""/></p>
+                                <p>Zeit von:<input type="time" name="timeFrom" value=""/></p>
+                                <p>bis: <input type="time" name="timeTo" value=""/></p>                                
+                                <p>Bemerkung: <input type="text" name="note" value=""/></p>
+                                <p class="submit">
+                                    <input type="submit" name="commit" value="Reservieren"/>
+                                </p>
+                            </form>
                         </div>
                     </li>
                     <li id="courses">
@@ -49,38 +61,38 @@
         <xsl:if test="state = 'aktiv'">
             <li>
                 <a href="?data={@id}#reservation">
-                <h3>
-                    <xsl:value-of select="name"/>
-                </h3>
-                von:
-                <xsl:value-of select="dateFrom"/>
-                <br/>
-                bis:
-                <xsl:value-of select="dateTo"/>
-                <br/>
-                Regelmässigkeit:
-                <xsl:value-of select="reoccurrance"/>
-                <br/>
-                von:
-                <xsl:value-of select="timeFrom"/>
-                <br/>
-                bis:
-                <xsl:value-of select="timeTo"/>
-                <br/>
-                Level:
-                <xsl:value-of select="level"/>
-                <br/>
-                max. Teilenhmer:
-                <xsl:value-of select="maxParticipants"/>
-                <br/>
-                empfohlen für:
-                <xsl:value-of select="recommendedFor"/>
-                <br/>
-                Kurssprache:
-                <xsl:value-of select="language"/>
-                <br/>
-                Beschreibung:
-                <xsl:value-of select="description"/>
+                    <h3>
+                        <xsl:value-of select="name"/>
+                    </h3>
+                    von:
+                    <xsl:value-of select="dateFrom"/>
+                    <br/>
+                    bis:
+                    <xsl:value-of select="dateTo"/>
+                    <br/>
+                    Regelmässigkeit:
+                    <xsl:value-of select="reoccurrance"/>
+                    <br/>
+                    von:
+                    <xsl:value-of select="timeFrom"/>
+                    <br/>
+                    bis:
+                    <xsl:value-of select="timeTo"/>
+                    <br/>
+                    Level:
+                    <xsl:value-of select="level"/>
+                    <br/>
+                    max. Teilenhmer:
+                    <xsl:value-of select="maxParticipants"/>
+                    <br/>
+                    empfohlen für:
+                    <xsl:value-of select="recommendedFor"/>
+                    <br/>
+                    Kurssprache:
+                    <xsl:value-of select="language"/>
+                    <br/>
+                    Beschreibung:
+                    <xsl:value-of select="description"/>
                 </a>
             </li>
         </xsl:if>
@@ -89,15 +101,15 @@
     <xsl:template name="rooms" match="//room">
         <li>
             <a href="?data={@id}#reservation">
-            <h3>
-                <xsl:value-of select="name"/>
-            </h3>
-            Gebäude:
-            <xsl:value-of select="in_building"/>
-            <br/>
-            <xsl:value-of select="description"/>
-            <br/>
-            <xsl:value-of select="equipement/equipmentID"/>
+                <h3>
+                    <xsl:value-of select="name"/>
+                </h3>
+                Gebäude:
+                <xsl:value-of select="in_building"/>
+                <br/>
+                <xsl:value-of select="description"/>
+                <br/>
+                <xsl:value-of select="equipement/equipmentID"/>
             </a>
         </li>
     </xsl:template>
@@ -105,14 +117,14 @@
     <xsl:template name="equipment" match="//item">
         <li>
             <a href="?data={@id}#reservation">
-            <h3>
-                <xsl:value-of select="name"/>
-            </h3>
-            Raumnummer:
-            <xsl:value-of select="roomID"/>
-            <br/>
-            Beschreibung:
-            <xsl:value-of select="description"/>
+                <h3>
+                    <xsl:value-of select="name"/>
+                </h3>
+                Raumnummer:
+                <xsl:value-of select="roomID"/>
+                <br/>
+                Beschreibung:
+                <xsl:value-of select="description"/>
             </a>
         </li>
     </xsl:template>
