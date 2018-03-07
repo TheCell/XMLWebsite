@@ -18,15 +18,15 @@
     <xs:element name="reservation">
         <xs:complexType>
             <xs:sequence>
+                <xs:element name="username" type="xs:string"/>
                 <xs:element name="dateFrom" type="xs:date"/>
                 <xs:element name="dateTo" type="xs:date"/>
                 <xs:element name="timeFrom" type="xs:time"/>
                 <xs:element name="timeTo" type="xs:time"/>
                 <xs:element name="note" type="xs:string"/>
-                <xs:element name="user" type="userID"/>
                 <xs:element name="entityID" type="entityID"/>
             </xs:sequence>
-            <xs:attribute name="id" type="resID" use="required"/>
+            <!--<xs:attribute name="id" type="resID" use="required"/>-->
         </xs:complexType>
     </xs:element>
 
