@@ -10,6 +10,11 @@
             </head>
             <body>
                 <ul class="tabs">
+                    <li id="reservation">
+                        <div class="content">
+                            TBD
+                        </div>
+                    </li>
                     <li id="courses">
                         <a href="#courses" class="trigger">Kurse</a>
                         <div class="content">
@@ -43,6 +48,7 @@
     <xsl:template name="course" match="//course">
         <xsl:if test="state = 'aktiv'">
             <li>
+                <a href="?data={@id}#reservation">
                 <h3>
                     <xsl:value-of select="name"/>
                 </h3>
@@ -75,12 +81,14 @@
                 <br/>
                 Beschreibung:
                 <xsl:value-of select="description"/>
+                </a>
             </li>
         </xsl:if>
     </xsl:template>
 
     <xsl:template name="rooms" match="//room">
         <li>
+            <a href="?data={@id}#reservation">
             <h3>
                 <xsl:value-of select="name"/>
             </h3>
@@ -90,11 +98,13 @@
             <xsl:value-of select="description"/>
             <br/>
             <xsl:value-of select="equipement/equipmentID"/>
+            </a>
         </li>
     </xsl:template>
 
     <xsl:template name="equipment" match="//item">
         <li>
+            <a href="?data={@id}#reservation">
             <h3>
                 <xsl:value-of select="name"/>
             </h3>
@@ -103,6 +113,7 @@
             <br/>
             Beschreibung:
             <xsl:value-of select="description"/>
+            </a>
         </li>
     </xsl:template>
 
