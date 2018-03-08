@@ -2,11 +2,15 @@
                 xmlns="http://www.w3.org/1999/xhtml">
 
     <xsl:template match="//list">
+        <?php
+                include "process.php";
+                ?>
         <html content="application/xml">
             <head>
                 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
                 <title>Sportzentrum Hopfendorf</title>
                 <link rel="stylesheet" type="text/css" href="resStyle.css"/>
+                <link rel="php" type="php" href="process.php"/>
             </head>
             <body>
                 <ul class="tabs">
@@ -14,17 +18,23 @@
                         <div class="content">
                             <h1>Reservieren von:</h1>
                             <form name="myform" method="POST" action="process.php">
-                                <p>Name: <input type="text" name="username" value=""/></p>
+                                <input name="eId" value="<?php $_GET['data']?>"/>
+                                <p>Name: <input name="username" value=""/></p>
                                 <p>Reservieren von: <input type="date" name="dateFrom" value=""/></p>
-                                
+
                                 <p>bis: <input type="date" name="dateTo" value=""/></p>
                                 <p>Zeit von:<input type="time" name="timeFrom" value=""/></p>
-                                <p>bis: <input type="time" name="timeTo" value=""/></p>                                
-                                <p>Bemerkung: <input type="text" name="note" value=""/></p>
+                                <p>bis: <input type="time" name="timeTo" value=""/></p>
+                                <p>Bemerkung: <input name="note" value=""/></p>
                                 <p class="submit">
-                                    <input type="submit" name="commit" value="Reservieren"/>
+                                    <input type="submit" value="Reservieren"/>
                                 </p>
                             </form>
+                        </div>
+                    </li>
+                    <li id="feedback">
+                        <div class="content">
+                            <h1>feedback</h1>
                         </div>
                     </li>
                     <li id="courses">
@@ -53,6 +63,7 @@
                     </li>
                 </ul>
             </body>
+
         </html>
 
     </xsl:template>
