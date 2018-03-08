@@ -70,11 +70,11 @@
 					<div class="TwentyToTwentyfour">
 						20:00 - 24:00
 					</div>
-					<div class="dayOne"></div>
-					<div class="dayTwo"></div>
-					<div class="dayThree"></div>
-					<div class="dayFour"></div>
-					<div class="dayFive"></div>
+					<div class="dayOne">jo</div>
+					<div class="dayTwo">jo</div>
+					<div class="dayThree">jo</div>
+					<div class="dayFour">jo</div>
+					<div class="dayFive">jo</div>
 					
 					<xsl:apply-templates 
 						select="document('../DBs/coursesDB.xml')"/>
@@ -85,7 +85,6 @@
     
     <!-- create templates for the database entries -->
 	<xsl:template match="courses">
-		<div class="recommendedFor">
 			<!-- <xsl:value-of select="$recommendedFor" /> -->
 			
 			<xsl:for-each select="course[contains(.,$recommendedFor)]">
@@ -100,7 +99,6 @@
 				</xsl:call-template>
 			</xsl:for-each>
 			<!--<xsl:apply-templates />-->
-		</div>
 	</xsl:template>
 	
 	<xsl:template name="course" >
@@ -109,33 +107,65 @@
 		<xsl:param name="currentTime" />
 		<xsl:variable name="dayTime">
 			<xsl:choose>
-			 <xsl:when 
-				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 200000">
-				 divAttrib timeTwentyToTwentyFour
-				 <xsl:value-of select="root/info/title" />
-			 </xsl:when>
-			 <xsl:when 
-				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 160000">
-				 divAttrib timeSixteenToTwenty
-			 </xsl:when>
-			 <xsl:when 
-				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 120000">
-				 divAttrib timeTwelveToSixteen
-			 </xsl:when>
-			 <xsl:when 
-				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 080000">
-				 divAttrib timeEightToTwelve
-			 </xsl:when>
-			 <xsl:when 
-				 test="number(translate(substring(timeFrom/text(),1,8),':','')) > 040000">
-				 divAttrib timeFourToEight
-			 </xsl:when>
-			 <xsl:otherwise>
-				 divAttrib timeZeroToEight
-			 </xsl:otherwise>
+				<xsl:when 
+					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 200000">
+					divAttrib timeTwentyToTwentyFour
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 160000">
+					divAttrib timeSixteenToTwenty
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 120000">
+					divAttrib timeTwelveToSixteen
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 080000">
+					divAttrib timeEightToTwelve
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 040000">
+					divAttrib timeFourToEight
+				</xsl:when>
+				<xsl:otherwise>
+					divAttrib timeZeroToEight
+				</xsl:otherwise>
 		   </xsl:choose>
 		</xsl:variable>
-		<div class="{$dayTime}">
+		<xsl:variable name="dateRelativeToStart">
+			<xsl:choose>
+				<xsl:when 
+					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) + 4)">
+					divAttrib notInNextFiveDays
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) + 3)">
+					divAttrib dayFive
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) + 2)">
+					divAttrib dayFour
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) + 1)">
+					divAttrib dayThree
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')))">
+					divAttrib dayTwo
+				</xsl:when>
+				<xsl:when 
+					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) - 1)">
+					divAttrib dayOne
+				</xsl:when>
+				<xsl:otherwise>
+					divAttrib notInNextFiveDays
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<div class="{$dayTime} {$dateRelativeToStart}">
+			Date in xml: <xsl:value-of select="number(translate(substring(dateFrom/text(),1,10),'-',''))" />
+			Date in php: <xsl:value-of select="(number(translate(substring($currentDate,1,10),'-','')))" />
 			<p>Parameter: <xsl:value-of select="$recommendedFor" />
 			<br />
 			<xsl:value-of select="$currentDate" />

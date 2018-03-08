@@ -111,8 +111,68 @@ body:after
 	grid-row: 7;
 }
 
-div:has( .divAttrib.timeEightToTwelve)
+div.divAttrib.timeZeroToEight
+{
+	grid-row: 1;
+	background-color: green;
+}
+
+div.divAttrib.timeFourToEight
+{
+	grid-row: 2;
+	background-color: red;
+}
+
+div.divAttrib.timeEightToTwelve
+{
+	grid-row: 3;
+	background-color: blue;
+}
+
+div.divAttrib.timeTwelveToSixteen
 {
 	grid-row: 4;
-	background-color: red;
+	background-color: purple;
+}
+
+div.divAttrib.timeSixteenToTwenty
+{
+	grid-row: 5;
+	background-color: beige;
+}
+
+div.divAttrib.timeTwentyToTwentyFour
+{
+	grid-row: 6;
+	background-color: burlywood;
+}
+
+div.divAttrib.dayOne
+{
+	grid-column: 2;
+}
+
+div.divAttrib.dayTwo
+{
+	grid-column: 3;
+}
+
+div.divAttrib.dayThree
+{
+	grid-column: 4;
+}
+
+div.divAttrib.dayFour
+{
+	grid-column: 5;
+}
+
+div.divAttrib.dayFive
+{
+	grid-column: 6;
+}
+
+div.divAttrib.notInNextFiveDays
+{
+	display: none;
 }
