@@ -1,8 +1,8 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/1999/xhtml">
 
     <xsl:template match="//list">
-        <?php
+         <?php
                 include "process.php";
                 ?>
         <html content="application/xml">
@@ -65,8 +65,8 @@
             </body>
 
         </html>
-
     </xsl:template>
+
 
     <xsl:template name="course" match="//course">
         <xsl:if test="state = 'aktiv'">
