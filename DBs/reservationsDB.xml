@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reservations xsi:noNamespaceSchemaLocation="reservationsDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<reservations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="reservationsDB.xsd">
     <reservation>
-        <username></username>
+        <username/>
         <dateFrom>2018-01-23</dateFrom>
         <dateTo>2018-02-12</dateTo>
         <timeFrom>13:50:00</timeFrom>
         <timeTo>14:50:00</timeTo>
-        <note></note>
+        <note/>
         <entityID>R002</entityID>
     </reservation>
     <reservation>
-        <username></username>
+        <username/>
         <dateFrom>2018-11-23</dateFrom>
         <dateTo>2018-11-30</dateTo>
         <timeFrom>09:00:00</timeFrom>
         <timeTo>12:00:00</timeTo>
-        <note></note>
+        <note/>
         <entityID>E034</entityID>
     </reservation>
-</reservations>
+    <reservation>
+        <username>Peter</username>
+        <dateFrom>2018-03-10</dateFrom>
+        <dateTo>2018-03-10</dateTo>
+        <timeFrom>12:05:00</timeFrom>
+        <timeTo>14:05:00</timeTo>
+        <entityID/>
+    </reservation>
+<reservation><username>Peter</username><dateFrom>2018-03-10</dateFrom><dateTo>2018-03-10</dateTo><timeFrom>12:05:00</timeFrom><timeTo>14:05:00</timeTo><entityID/></reservation><reservation><username>Peter</username><dateFrom>2018-03-10</dateFrom><dateTo>2018-03-10</dateTo><timeFrom>12:05:00</timeFrom><timeTo>14:05:00</timeTo><entityID/></reservation><reservation><username>P</username><dateFrom/><dateTo/><timeFrom>:00</timeFrom><timeTo>:00</timeTo><entityID/></reservation></reservations>
