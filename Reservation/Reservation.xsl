@@ -1,4 +1,4 @@
-<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/1999/xhtml">
 
     <xsl:template match="//list">
@@ -18,10 +18,9 @@
                         <div class="content">
                             <h1>Reservieren von:</h1>
                             <form name="myform" method="POST" action="process.php">
-                                <input name="eId" value="<?php $_GET['data']?>"/>
+                                <p>ID: <?php echo '<input type="text" name="eId" value="' . htmlspecialchars($_GET['data']) .'"/>'; ?></p>
                                 <p>Name: <input name="username" value=""/></p>
                                 <p>Reservieren von: <input type="date" name="dateFrom" value=""/></p>
-
                                 <p>bis: <input type="date" name="dateTo" value=""/></p>
                                 <p>Zeit von:<input type="time" name="timeFrom" value=""/></p>
                                 <p>bis: <input type="time" name="timeTo" value=""/></p>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <courses xsi:noNamespaceSchemaLocation="coursesDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <course id="C001">
         <name>Bouldern</name>
