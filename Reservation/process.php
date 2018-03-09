@@ -5,9 +5,11 @@ function alreadyReserved()
 
 }
 
+
+
 //Check whether the form has been submitted
 if (!empty($_POST)) {
-    $xml = new SimpleXMLElement("../DBs/reservationsDB.xml");
+    $xml = new SimpleXMLElement('..\DBs\reservationsDB.xml');
 
 
     foreach ($xml->reservation as $id) {
@@ -18,27 +20,10 @@ if (!empty($_POST)) {
     $res = $xml->addChild("reservation");
     $res->addChild("dateFrom", $_POST['dateFrom']);
     $res->addChild("dateTo", $_POST['dateTo']);
-    $res->addChild("timeFrom", $_POST['timeFrom'].":00");
-    $res->addChild("timeTo", $_POST['timeTo'].":00");
+    $res->addChild("timeFrom", $_POST['timeFrom'] . ":00");
+    $res->addChild("timeTo", $_POST['timeTo'] . ":00");
     $res->addChild("entityID", $_POST['eId']);
 
-   /*<dateFrom>2018-11-23</dateFrom>
-        <dateTo>2018-11-30</dateTo>
-        <timeFrom>09:00:00</timeFrom>
-        <timeTo>12:00:00</timeTo>
-        <note></note>
-        <user>U987</user>
-        <entityID>E034</entityID>
-   */
-   //Let's now print out the received values in the browser
-   echo "Your name: {$_POST['username']}<br />";
-   echo "Date from: {$_POST['dateFrom']}<br />";
-   echo "Date to: {$_POST['dateTo']}<br /><br />";
-   echo "Time from:<br />{$_POST['timeFrom']}<br /><br />";
-   echo "time to: {$_POST['timeTo']}<br />";
-   echo "note: {$_POST['note']}<br />";
-} else {
-    echo "You can't see this page without submitting the form.";
 }
 ?>
 <html content="application/xml">
