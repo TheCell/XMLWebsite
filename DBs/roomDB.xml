@@ -1,7 +1,7 @@
 <facilities xsi:noNamespaceSchemaLocation="roomDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <room id="R001">
         <name>Lager</name>
-        <in_building>Hauptgebäude</in_building>
+        <in_building>Hotelanlage</in_building>
         <description>Lagert material</description>
         <equipment>
             <equipmentID>E002</equipmentID>

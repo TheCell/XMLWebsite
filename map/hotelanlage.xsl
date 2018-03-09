@@ -9,8 +9,14 @@
 	<xsl:output method="html"/>
     <xsl:template match="sc:index">
         <div>
-            Hello World
+            <xsl:apply-templates select="document('../DBs/roomDB.xml')//room/in_building[text()='Hotelanlage']"/>
         </div>
+    </xsl:template>
+    
+    <xsl:template match="//room/in_building[text()='Hotelanlage']">
+        <p>
+        <xsl:value-of select="../name/text()"/>
+        </p>
     </xsl:template>
     
 </xsl:stylesheet>
