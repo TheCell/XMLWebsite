@@ -29,6 +29,19 @@ body:after
 	margin-left: 10px;
 }
 
+.calendarSubmitButton
+{
+	padding: 0px;
+}
+
+.calendarSubmitButton > input
+{
+	width: 100px;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .placeholder
 {
 	display: none;

@@ -58,7 +58,7 @@
 								Reset
 							</input>
 						</div>
-						<div class="inputField">
+						<div class="inputField calendarSubmitButton">
 							<input type="submit" value="Senden" />
 						</div>
 					</form>
