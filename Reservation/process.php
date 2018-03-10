@@ -1,7 +1,14 @@
 <?php
 
+$get = "";
+
 function alreadyReserved(){
 
+}
+
+function handOver(){
+    global $get;
+    $get = $_GET['data'];
 }
 
 
@@ -21,6 +28,7 @@ if (!empty($_POST)) {
     $res->addChild("dateTo", $_POST['dateTo']);
     $res->addChild("timeFrom", $_POST['timeFrom'] . ":00");
     $res->addChild("timeTo", $_POST['timeTo'] . ":00");
+    $res->addChild("note", $_POST['note']);
     $res->addChild("entityID", $_POST['ID']);
 $xml->asXML('..\DBs\reservationsDB.xml');
 

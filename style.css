@@ -199,6 +199,7 @@
     .map {
         float: left;
         padding: 0 15px;
+        position: relative;
         width: 60%;
     }
     
@@ -209,6 +210,30 @@
     .building:hover {
         cursor: pointer;
         opacity: 0.8;
+    }
+    
+    #buildingoutput {
+        background: rgba(0,0,0,0.8);
+        border-radius: 5px;
+        bottom: 0;
+        box-shadow: 0 0 10px;
+        color: #FFF;
+        display: none;
+        height: 220px;
+        left: 0;
+        margin: auto;
+        overflow-y: scroll;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 500px;
+        z-index: 100;
+    }
+    
+    .buildinginfo {
+        height: 200px;
+        width: 480px;
     }
     
     /*

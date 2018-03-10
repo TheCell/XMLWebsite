@@ -18,12 +18,4 @@
         <note/>
         <entityID>E034</entityID>
     </reservation>
-    <reservation>
-        <username>Peter</username>
-        <dateFrom>2018-03-10</dateFrom>
-        <dateTo>2018-03-10</dateTo>
-        <timeFrom>12:05:00</timeFrom>
-        <timeTo>14:05:00</timeTo>
-        <entityID/>
-    </reservation>
-<reservation><username>Peter</username><dateFrom>2018-03-10</dateFrom><dateTo>2018-03-10</dateTo><timeFrom>12:05:00</timeFrom><timeTo>14:05:00</timeTo><entityID/></reservation><reservation><username>Peter</username><dateFrom>2018-03-10</dateFrom><dateTo>2018-03-10</dateTo><timeFrom>12:05:00</timeFrom><timeTo>14:05:00</timeTo><entityID/></reservation><reservation><username>P</username><dateFrom/><dateTo/><timeFrom>:00</timeFrom><timeTo>:00</timeTo><entityID/></reservation></reservations>
+</reservations>

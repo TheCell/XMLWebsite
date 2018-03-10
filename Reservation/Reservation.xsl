@@ -1,7 +1,8 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/1999/xhtml">
 
-    <xsl:template match="//list">
+    <xsl:template match="/">
+        <xsl:param name="ID"/>
         <?php
                 include "process.php";
                 ?>
@@ -51,7 +52,7 @@
                                 <p>Bemerkung:
                                     <input name="note" value="" placeholder="Bemerkung"/>
                                 </p>
-                                <?php echo "<input type='text' name='ID' value='".$_GET['data']."'/>"; ?>
+                                <input type="hidden" name="ID" value="{$ID}"/>
                                 <p class="submit">
                                     <input type="submit" value="Reservieren"/>
                                 </p>
@@ -66,21 +67,21 @@
                     <li id="courses">
                         <div class="content">
                             <ul>
-                                <xsl:apply-templates select="document(courses/@name)"/>
+                                <xsl:apply-templates select="document(//courses/@name)"/>
                             </ul>
                         </div>
                     </li>
                     <li id="rooms">
                         <div class="content">
                             <ul>
-                                <xsl:apply-templates select="document(rooms/@name)"/>
+                                <xsl:apply-templates select="document(//rooms/@name)"/>
                             </ul>
                         </div>
                     </li>
                     <li id="equip">
                         <div class="content">
                             <ul>
-                                <xsl:apply-templates select="document(equip/@name)"/>
+                                <xsl:apply-templates select="document(//equip/@name)"/>
                             </ul>
                         </div>
                     </li>

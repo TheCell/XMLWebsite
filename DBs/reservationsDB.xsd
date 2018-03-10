@@ -34,7 +34,7 @@
     <xs:simpleType name="entityID">
         <xs:restriction base="xs:string">
             <xs:length value="4"/>
-            <xs:pattern value="[ER]\d{3}"/>
+            <xs:pattern value="[ERC]\d{3}"/>
         </xs:restriction>
     </xs:simpleType>
 

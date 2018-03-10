@@ -45,4 +45,6 @@ function getContent(filename)
         resultDocument = xsltProcessor.transformToFragment(xml, document);
         document.getElementById("buildingoutput").appendChild(resultDocument);
     }
+    
+    document.getElementById("buildingoutput").style.display = "block";
 }
