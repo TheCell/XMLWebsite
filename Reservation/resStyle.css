@@ -46,3 +46,37 @@ li:target ~ li:last-child .content {
 li:target ~ li:last-child .trigger {
     color: #aaa;
 }
+
+h1{
+    font-size: larger;
+}
+
+h3{
+    font-size: large;
+}
+
+a{
+    color: inherit;
+}
+
+
+
+table{
+    text-align: left;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding-right: 100px;
+    border-collapse: collapse;
+}
+caption{
+    text-align: left
+}
+
+td{
+    padding-right: 50px; margin: 0px 0px 0px 0px
+}
+
+tr{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}

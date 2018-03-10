@@ -2,7 +2,7 @@
                 xmlns="http://www.w3.org/1999/xhtml">
 
     <xsl:template match="//list">
-         <?php
+        <?php
                 include "process.php";
                 ?>
         <html content="application/xml">
@@ -18,13 +18,26 @@
                         <div class="content">
                             <h1>Reservieren von:</h1>
                             <form name="myform" method="POST" action="process.php">
-                                <p>ID: <?php echo '<input type="text" name="eId" value="' . htmlspecialchars($_GET['data']) .'"/>'; ?></p>
-                                <p>Name: <input name="username" value=""/></p>
-                                <p>Reservieren von: <input type="date" name="dateFrom" value=""/></p>
-                                <p>bis: <input type="date" name="dateTo" value=""/></p>
-                                <p>Zeit von:<input type="time" name="timeFrom" value=""/></p>
-                                <p>bis: <input type="time" name="timeTo" value=""/></p>
-                                <p>Bemerkung: <input name="note" value=""/></p>
+                                <p>
+                                    ID: <?php echo '<input type="text" name="eId" value="' . htmlspecialchars($_GET['data']) .'"/>'; ?></p>
+                                <p>Name:
+                                    <input name="username" value=""/>
+                                </p>
+                                <p>Reservieren von:
+                                    <input type="date" name="dateFrom" value=""/>
+                                </p>
+                                <p>bis:
+                                    <input type="date" name="dateTo" value=""/>
+                                </p>
+                                <p>Zeit von:
+                                    <input type="time" name="timeFrom" value=""/>
+                                </p>
+                                <p>bis:
+                                    <input type="time" name="timeTo" value=""/>
+                                </p>
+                                <p>Bemerkung:
+                                    <input name="note" value=""/>
+                                </p>
                                 <p class="submit">
                                     <input type="submit" value="Reservieren"/>
                                 </p>
@@ -109,34 +122,64 @@
     </xsl:template>
 
     <xsl:template name="rooms" match="//room">
-        <li>
-            <a href="?data={@id}#reservation">
-                <h3>
-                    <xsl:value-of select="name"/>
-                </h3>
-                Gebäude:
-                <xsl:value-of select="in_building"/>
-                <br/>
-                <xsl:value-of select="description"/>
-                <br/>
-                <xsl:value-of select="equipement/equipmentID"/>
-            </a>
-        </li>
+        <table>
+            <caption>
+                <a href="?data={@id}#reservation">
+                    <h2>
+                        <xsl:value-of select="name"/>
+                    </h2>
+                </a>
+            </caption>
+            <tr>
+                <td>
+                    <h3>Gebäude:</h3>
+                </td>
+                <td>
+                    <h3>
+                        <xsl:value-of select="in_building"/>
+                    </h3>
+                </td>
+            </tr>
+        </table>
+        <h3>
+            <xsl:value-of select="description"/>
+        </h3>
+
+        <h3>
+            <xsl:value-of select="equipement/equipmentID"/>
+        </h3>
     </xsl:template>
 
     <xsl:template name="equipment" match="//item">
-        <li>
-            <a href="?data={@id}#reservation">
-                <h3>
-                    <xsl:value-of select="name"/>
-                </h3>
-                Raumnummer:
-                <xsl:value-of select="roomID"/>
-                <br/>
-                Beschreibung:
-                <xsl:value-of select="description"/>
-            </a>
-        </li>
+        <table>
+            <caption>
+                <a href="?data={@id}#reservation">
+                    <h2>
+                        <xsl:value-of select="name"/>
+                    </h2>
+                </a>
+            </caption>
+            <tr>
+                <td style="">
+                    <h3>Raumnummer:</h3>
+                </td>
+                <td>
+                    <h3>
+                        <xsl:value-of select="roomID"/>
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Beschreibung:</h3>
+                </td>
+                <td>
+                    <h3>
+                        <xsl:value-of select="description"/>
+                    </h3>
+                </td>
+            </tr>
+        </table>
     </xsl:template>
 
 </xsl:stylesheet>
