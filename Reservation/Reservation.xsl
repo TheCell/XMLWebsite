@@ -1,7 +1,8 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/1999/xhtml">
 
-    <xsl:template match="//list">
+    <xsl:template match="/">
+        <xsl:param name="ID"/>
         <?php
                 include "process.php";
                 ?>
@@ -16,6 +17,7 @@
                 <ul class="tabs">
                     <li id="reservation">
                         <div class="content">
+
                             <form name="myform" method="POST" action="process.php">
                                 <h1>Reservieren von:</h1>
                                 <p>Name:
@@ -32,9 +34,9 @@
                                     <input type="time" name="timeTo" value=""/>
                                 </p>
                                 <p>Bemerkung:
-                                    <input name="note" type="text" value="Bemerkung"/>
+                                    <input name="note" value="Bemerkung"/>
                                 </p>
-                                <?php echo "<input type='text' name='ID' value='".$_GET['data']."'/>"; ?>
+                                <input type="hidden" name="ID" value="{$ID}"/>
                                 <p class="submit">
                                     <input type="submit" value="Reservieren"/>
                                 </p>
@@ -50,7 +52,7 @@
                         <a href="#courses" class="trigger">Kurse</a>
                         <div class="content">
                             <ul>
-                                <xsl:apply-templates select="document(courses/@name)"/>
+                                <xsl:apply-templates select="document(//courses/@name)"/>
                             </ul>
                         </div>
                     </li>
@@ -58,7 +60,7 @@
                         <a href="#rooms" class="trigger">Räume</a>
                         <div class="content">
                             <ul>
-                                <xsl:apply-templates select="document(rooms/@name)"/>
+                                <xsl:apply-templates select="document(//rooms/@name)"/>
                             </ul>
                         </div>
                     </li>
@@ -66,7 +68,8 @@
                         <a href="#equip" class="trigger">Geräte</a>
                         <div class="content">
                             <ul>
-                                <xsl:apply-templates select="document(equip/@name)"/>
+                                <li><xsl:value-of select="//rooms/text()"/></li>
+                                <xsl:apply-templates select="document(//equip/@name)"/>
                             </ul>
                         </div>
                     </li>
@@ -75,17 +78,15 @@
 
         </html>
     </xsl:template>
-
-
     <xsl:template name="course" match="//course">
         <xsl:if test="state = 'aktiv'">
             <table>
                 <caption>
-                    <a href="?data={@id}#reservation">
-                        <h3>
-                            <xsl:value-of select="name"/>
-                        </h3>
-                    </a>
+                    <!--<a href="#reservation" onclick="save({@id})">-->
+                        <!--<h3>-->
+                            <!--<xsl:value-of select="name"/>-->
+                        <!--</h3>-->
+                    <!--</a>-->
                 </caption>
                 <tr class="dark">
                     <td>
@@ -175,11 +176,11 @@
     <xsl:template name="rooms" match="//room">
         <table>
             <caption>
-                <a href="?data={@id}#reservation">
-                    <h3>
-                        <xsl:value-of select="name"/>
-                    </h3>
-                </a>
+                <!--<a href="#reservation" onclick="save({@id})">-->
+                    <!--<h3>-->
+                        <!--<xsl:value-of select="name"/>-->
+                    <!--</h3>-->
+                <!--</a>-->
             </caption>
             <tr class="dark">
                 <td>
@@ -204,11 +205,11 @@
     <xsl:template name="equipment" match="//item">
         <table>
             <caption>
-                <a href="?data={@id}#reservation">
-                    <h3>
-                        <xsl:value-of select="name"/>
-                    </h3>
-                </a>
+                <!--<a href="#reservation" onclick="save({@id})">-->
+                    <!--<h3>-->
+                        <!--<xsl:value-of select="name"/>-->
+                    <!--</h3>-->
+                <!--</a>-->
             </caption>
             <tr class="dark">
                 <td style="">
