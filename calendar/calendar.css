@@ -19,40 +19,86 @@ body:after
 	padding: 5px;
 }
 
+.inputField
+{
+	display: inline;
+	width: 200px;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 10px;
+}
+
+.placeholder
+{
+	display: none;
+}
+
+.Alle
+{
+	background-color: #AC64EB;
+}
+
+.Normal
+{
+	background-color: #FF6459;
+}
+
+.Amputation
+{
+	background-color: #E8B455;
+}
+
+.Geistig
+{
+	background-color: #DDFF64;
+}
+
+.nochEines
+{
+	background-color: #6FC0FF;
+}
+
+.calendarForm
+{
+	background-color: #333333;
+	padding: 13px;
+}
+
 .dateRow
 {
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	border-left: 1px solid black;
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-left: 1px solid #333333;
 	grid-column: 1 / 8;
 	grid-row: 1;
 }
 
 .dateRowDateOne
 {
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+	border-left: 1px solid #333333;
+	border-right: 1px solid #333333;
 	grid-column: 2 / span 1;
 	grid-row: 1;
 }
 
 .dateRowDateTwo
 {
-	border-right: 1px solid black;
+	border-right: 1px solid #333333;
 	grid-column: 3 / span 1;
 	grid-row: 1;
 }
 
 .dateRowDateThree
 {
-	border-right: 1px solid black;
+	border-right: 1px solid #333333;
 	grid-column: 4 / span 1;
 	grid-row: 1;
 }
 
 .dateRowDateFour
 {
-	border-right: 1px solid black;
+	border-right: 1px solid #333333;
 	grid-column: 5 / span 1;
 	grid-row: 1;
 }
@@ -65,98 +111,101 @@ body:after
 
 .dayOne
 {
-	border: 1px solid black;
+	
+	border-left: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
 	grid-column: 2;
 	grid-row: 2 / 8;
 }
 
 .dayTwo
 {
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
 	grid-column: 3;
 	grid-row: 2 / 8;
 }
 
 .dayThree
 {
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
 	grid-column: 4;
 	grid-row: 2 / 8;
 }
 
 .dayFour
 {
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
 	grid-column: 5;
 	grid-row: 2 / 8;
 }
 
 .dayFive
 {
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
 	grid-column: 6;
 	grid-row: 2 / 8;
 }
 
 .zeroToFour
 {
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
 	grid-column: 1 / 7;
 	grid-row: 2;
 }
 
 .FourToEight
 {
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
 	grid-column: 1 / 7;
 	grid-row: 3;
 }
 
 .EightToTwelve
 {
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
 	grid-column: 1 / 7;
 	grid-row: 4;
 }
 
 .TwelveToSixteen
 {
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
 	grid-column: 1 / 7;
 	grid-row: 5;
 }
 
 .SixteenToTwenty
 {
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
 	grid-column: 1 / 7;
 	grid-row: 6;
 }
 
 .TwentyToTwentyfour
 {
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
 	grid-column: 1 / 7;
 	grid-row: 7;
 }
@@ -164,37 +213,31 @@ body:after
 div.divAttrib.timeZeroToEight
 {
 	grid-row: 1;
-	background-color: green;
 }
 
 div.divAttrib.timeFourToEight
 {
 	grid-row: 2;
-	background-color: red;
 }
 
 div.divAttrib.timeEightToTwelve
 {
 	grid-row: 3;
-	background-color: blue;
 }
 
 div.divAttrib.timeTwelveToSixteen
 {
 	grid-row: 4;
-	background-color: purple;
 }
 
 div.divAttrib.timeSixteenToTwenty
 {
 	grid-row: 5;
-	background-color: beige;
 }
 
 div.divAttrib.timeTwentyToTwentyFour
 {
 	grid-row: 6;
-	background-color: burlywood;
 }
 
 div.divAttrib.dayOne

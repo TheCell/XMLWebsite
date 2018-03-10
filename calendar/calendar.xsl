@@ -29,24 +29,38 @@
 						</div>
 					</div>
 				</div>
-                <h1>Kalender</h1>
 				<!-- Load the database and apply templates -->
 				
 				<div class="recommendedSelection">
-					<form type="submit" method="get" action="calendar.php" >
-						<input type="radio" name="recommendedFor" value="Alle" >
-							Alle
-						</input>
-						<input type="radio" name="recommendedFor" value="Normal" >
-							Normal
-						</input>
-						<input type="radio" name="recommendedFor" value="Amputation" >
-							Amputation
-						</input>
-						<input type="radio" name="recommendedFor" value="Geistig eingeschränkt" >
-							Geistig eingeschränkt
-						</input>
-						<input type="submit" value="Senden" />
+					<form type="submit" method="get" action="calendar.php" class="calendarForm">
+						<div class="inputField Alle">
+							<input type="radio" name="recommendedFor" value="Alle" >
+								Alle
+							</input>
+						</div>
+						<div class="inputField Normal">
+							<input type="radio" name="recommendedFor" value="Normal" >
+								Normal
+							</input>
+						</div>
+						<div class="inputField Amputation">
+							<input type="radio" name="recommendedFor" value="Amputation" >
+								Amputation
+							</input>
+						</div>
+						<div class="inputField Geistig">
+							<input type="radio" name="recommendedFor" value="Geistig eingeschränkt" >
+								Geistige behinderung
+							</input>
+						</div>
+						<div class="inputField nochEines">
+							<input type="radio" name="recommendedFor" value="" >
+								Reset
+							</input>
+						</div>
+						<div class="inputField">
+							<input type="submit" value="Senden" />
+						</div>
 					</form>
 				</div>
 				
@@ -70,11 +84,21 @@
 					<div class="TwentyToTwentyfour">
 						20:00 - 24:00
 					</div>
-					<div class="dayOne">.</div>
-					<div class="dayTwo">.</div>
-					<div class="dayThree">.</div>
-					<div class="dayFour">.</div>
-					<div class="dayFive">.</div>
+					<div class="dayOne">
+						<span class="placeholder">.</span>
+					</div>
+					<div class="dayTwo">
+						<span class="placeholder">.</span>
+					</div>
+					<div class="dayThree">
+						<span class="placeholder">.</span>
+					</div>
+					<div class="dayFour">
+						<span class="placeholder">.</span>
+					</div>
+					<div class="dayFive">
+						<span class="placeholder">.</span>
+					</div>
 					<div class="dateRowDateOne calendarDateFormated">
 						<xsl:value-of select="$currentDate" />
 					</div>
@@ -222,7 +246,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<div class="{$dayTime} {$dateRelativeToStart}">
+		<div class="{$dayTime} {$dateRelativeToStart} {recommendedFor}">
 			<!--
 			Date in xml: <xsl:value-of select="number(translate(substring(dateFrom/text(),1,10),'-',''))" />
 			Date in php: <xsl:value-of select="(number(translate(substring($currentDate,1,10),'-','')))" />
@@ -233,10 +257,12 @@
 			<xsl:value-of select="$currentTime" />
 			<br />
 			<xsl:value-of select="number(translate(substring(timeFrom/text(),1,8),':',''))" />
+			</p>
 			-->
 			Name: <xsl:value-of select="name" />
 			Datum: <xsl:value-of select="dateFrom" />
 			Zeitpunkt: <xsl:value-of select="timeFrom" />
+			Recommended for <xsl:value-of select="recommendedFor" />
 		</div>
 	</xsl:template>
 	
