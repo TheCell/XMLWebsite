@@ -259,10 +259,12 @@
 			<xsl:value-of select="number(translate(substring(timeFrom/text(),1,8),':',''))" />
 			</p>
 			-->
-			Name: <xsl:value-of select="name" />
-			Datum: <xsl:value-of select="dateFrom" />
+			Kurs: <xsl:value-of select="name" />
+			<br />
+			<!--Datum: <xsl:value-of select="dateFrom" />-->
 			Zeitpunkt: <xsl:value-of select="timeFrom" />
-			Recommended for <xsl:value-of select="recommendedFor" />
+			<br />
+			<!--Recommended for <xsl:value-of select="recommendedFor" />-->
 		</div>
 	</xsl:template>
 	
