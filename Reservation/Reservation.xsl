@@ -2,7 +2,7 @@
                 xmlns="http://www.w3.org/1999/xhtml">
 
     <xsl:template match="//list">
-        <?php
+         <?php
                 include "process.php";
                 ?>
         <html content="application/xml">
@@ -18,26 +18,13 @@
                         <div class="content">
                             <h1>Reservieren von:</h1>
                             <form name="myform" method="POST" action="process.php">
-                                <p>
-                                    ID: <?php echo '<input type="text" name="eId" value="' . htmlspecialchars($_GET['data']) .'"/>'; ?></p>
-                                <p>Name:
-                                    <input name="username" value=""/>
-                                </p>
-                                <p>Reservieren von:
-                                    <input type="date" name="dateFrom" value=""/>
-                                </p>
-                                <p>bis:
-                                    <input type="date" name="dateTo" value=""/>
-                                </p>
-                                <p>Zeit von:
-                                    <input type="time" name="timeFrom" value=""/>
-                                </p>
-                                <p>bis:
-                                    <input type="time" name="timeTo" value=""/>
-                                </p>
-                                <p>Bemerkung:
-                                    <input name="note" value=""/>
-                                </p>
+                                <p>Name: <input name="username" value=""/></p>
+                                <p>Reservieren von: <input type="date" name="dateFrom" value=""/></p>
+                                <p>bis: <input type="date" name="dateTo" value=""/></p>
+                                <p>Zeit von:<input type="time" name="timeFrom" value=""/></p>
+                                <p>bis: <input type="time" name="timeTo" value=""/></p>
+                                <p>Bemerkung: <input name="note" value=""/></p>
+                                <?php echo "<input type='text' name='ID' value='".$_GET['data']."'/>"; ?>
                                 <p class="submit">
                                     <input type="submit" value="Reservieren"/>
                                 </p>
