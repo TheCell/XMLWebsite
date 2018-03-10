@@ -2,7 +2,7 @@
                 xmlns="http://www.w3.org/1999/xhtml">
 
     <xsl:template match="//list">
-         <?php
+        <?php
                 include "process.php";
                 ?>
         <html content="application/xml">
@@ -16,14 +16,24 @@
                 <ul class="tabs">
                     <li id="reservation">
                         <div class="content">
-                            <h1>Reservieren von:</h1>
                             <form name="myform" method="POST" action="process.php">
-                                <p>Name: <input name="username" value=""/></p>
-                                <p>Reservieren von: <input type="date" name="dateFrom" value=""/></p>
-                                <p>bis: <input type="date" name="dateTo" value=""/></p>
-                                <p>Zeit von:<input type="time" name="timeFrom" value=""/></p>
-                                <p>bis: <input type="time" name="timeTo" value=""/></p>
-                                <p>Bemerkung: <input name="note" value=""/></p>
+                                <h1>Reservieren von:</h1>
+                                <p>Name:
+                                    <input name="username" value="Username"/>
+                                </p>
+                                <p>Reservieren von:
+                                    <input type="date" name="dateFrom" value=""/>
+                                bis:
+                                    <input type="date" name="dateTo" value=""/>
+                                </p>
+                                <p>Zeit von:
+                                    <input type="time" name="timeFrom" value=""/>
+                                bis:
+                                    <input type="time" name="timeTo" value=""/>
+                                </p>
+                                <p>Bemerkung:
+                                    <input name="note" type="text" value="Bemerkung"/>
+                                </p>
                                 <?php echo "<input type='text' name='ID' value='".$_GET['data']."'/>"; ?>
                                 <p class="submit">
                                     <input type="submit" value="Reservieren"/>
@@ -69,42 +79,96 @@
 
     <xsl:template name="course" match="//course">
         <xsl:if test="state = 'aktiv'">
-            <li>
-                <a href="?data={@id}#reservation">
-                    <h3>
-                        <xsl:value-of select="name"/>
-                    </h3>
-                    von:
-                    <xsl:value-of select="dateFrom"/>
-                    <br/>
-                    bis:
-                    <xsl:value-of select="dateTo"/>
-                    <br/>
-                    Regelmässigkeit:
-                    <xsl:value-of select="reoccurrance"/>
-                    <br/>
-                    von:
-                    <xsl:value-of select="timeFrom"/>
-                    <br/>
-                    bis:
-                    <xsl:value-of select="timeTo"/>
-                    <br/>
-                    Level:
-                    <xsl:value-of select="level"/>
-                    <br/>
-                    max. Teilenhmer:
-                    <xsl:value-of select="maxParticipants"/>
-                    <br/>
-                    empfohlen für:
-                    <xsl:value-of select="recommendedFor"/>
-                    <br/>
-                    Kurssprache:
-                    <xsl:value-of select="language"/>
-                    <br/>
-                    Beschreibung:
-                    <xsl:value-of select="description"/>
-                </a>
-            </li>
+            <table>
+                <caption>
+                    <a href="?data={@id}#reservation">
+                        <h3>
+                            <xsl:value-of select="name"/>
+                        </h3>
+                    </a>
+                </caption>
+                <tr class="dark">
+                    <td>
+
+                        von:
+                    </td>
+                    <td>
+                        <xsl:value-of select="dateFrom"/>
+                    </td>
+                </tr>
+                <tr class="bright">
+                    <td>
+                        bis:
+                    </td>
+                    <td>
+                        <xsl:value-of select="dateTo"/>
+                    </td>
+                </tr>
+                <tr class="dark">
+                    <td>
+                        Regelmässigkeit:
+                    </td>
+                    <td>
+                        <xsl:value-of select="reoccurrance"/>
+                    </td>
+                </tr>
+                <tr class="bright">
+                    <td>
+                        von:
+                    </td>
+                    <td>
+                        <xsl:value-of select="timeFrom"/>
+                    </td>
+                </tr>
+                <tr class="dark">
+                    <td>
+                        bis:
+                    </td>
+                    <td>
+                        <xsl:value-of select="timeTo"/>
+                    </td>
+                </tr>
+                <tr class="bright">
+                    <td>
+                        Level:
+                    </td>
+                    <td>
+                        <xsl:value-of select="level"/>
+                    </td>
+                </tr>
+                <tr class="dark">
+                    <td>
+                        max. Teilenhmer:
+                    </td>
+                    <td>
+                        <xsl:value-of select="maxParticipants"/>
+                    </td>
+                </tr>
+                <tr class="bright">
+                    <td>
+                        empfohlen für:
+                    </td>
+                    <td>
+                        <xsl:value-of select="recommendedFor"/>
+                    </td>
+                </tr>
+                <tr class="dark">
+                    <td>
+                        Kurssprache:
+                    </td>
+                    <td>
+                        <xsl:value-of select="language"/>
+                    </td>
+                </tr>
+                <tr class="bright">
+                    <td>
+                        Beschreibung:
+                    </td>
+                    <td>
+                        <xsl:value-of select="description"/>
+                    </td>
+                </tr>
+            </table>
         </xsl:if>
     </xsl:template>
 
@@ -112,58 +176,54 @@
         <table>
             <caption>
                 <a href="?data={@id}#reservation">
-                    <h2>
+                    <h3>
                         <xsl:value-of select="name"/>
-                    </h2>
+                    </h3>
                 </a>
             </caption>
-            <tr>
+            <tr class="dark">
                 <td>
-                    <h3>Gebäude:</h3>
+                    Gebäude:
                 </td>
                 <td>
-                    <h3>
-                        <xsl:value-of select="in_building"/>
-                    </h3>
+                    <xsl:value-of select="in_building"/>
+                </td>
+            </tr>
+            <tr class="bright">
+                <td>
+                    Beschreibung:
+                </td>
+                <td>
+                    <xsl:value-of select="description"/>
                 </td>
             </tr>
         </table>
-        <h3>
-            <xsl:value-of select="description"/>
-        </h3>
-
-        <h3>
-            <xsl:value-of select="equipement/equipmentID"/>
-        </h3>
+        <xsl:value-of select="equipement/equipmentID"/>
     </xsl:template>
 
     <xsl:template name="equipment" match="//item">
         <table>
             <caption>
                 <a href="?data={@id}#reservation">
-                    <h2>
+                    <h3>
                         <xsl:value-of select="name"/>
-                    </h2>
+                    </h3>
                 </a>
             </caption>
-            <tr>
+            <tr class="dark">
                 <td style="">
-                    <h3>Raumnummer:</h3>
+                    Raumnummer:
                 </td>
                 <td>
-                    <h3>
-                        <xsl:value-of select="roomID"/>
-                    </h3>
+                    <xsl:value-of select="roomID"/>
                 </td>
             </tr>
-            <tr>
+            <tr class="bright">
                 <td>
-                    <h3>Beschreibung:</h3>
+                    Beschreibung:
                 </td>
                 <td>
-                    <h3>
-                        <xsl:value-of select="description"/>
-                    </h3>
+                    <xsl:value-of select="description"/>
                 </td>
             </tr>
         </table>
