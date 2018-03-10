@@ -43,7 +43,14 @@ function getContent(filename)
         xsltProcessor = new XSLTProcessor();
         xsltProcessor.importStylesheet(xsl);
         resultDocument = xsltProcessor.transformToFragment(xml, document);
-        document.getElementById("buildingoutput").appendChild(resultDocument);
+        if(document.getElementById("buildingoutput") !== null) {
+            var item = document.getElementById("buildinginfo");
+            if (item === null) {
+                document.getElementById("buildingoutput").appendChild(resultDocument);
+            } else {
+                item.replaceWith(resultDocument);
+            }
+        }
     }
     
     document.getElementById("buildingoutput").style.display = "block";

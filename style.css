@@ -213,16 +213,15 @@
     }
     
     #buildingoutput {
-        background: rgba(0,0,0,0.8);
+        background: rgba(255,255,255,0.9);
         border-radius: 5px;
         bottom: 0;
         box-shadow: 0 0 10px;
-        color: #FFF;
         display: none;
         height: 220px;
         left: 0;
         margin: auto;
-        overflow-y: scroll;
+        overflow: hidden;
         padding: 10px;
         position: absolute;
         right: 0;
@@ -231,9 +230,27 @@
         z-index: 100;
     }
     
-    .buildinginfo {
+    #buildinginfo {
         height: 200px;
+        overflow-y: scroll;
         width: 480px;
+    }
+    
+    .closebutton {
+        border-radius: 5px;
+        background: rgba(0,0,0,0.3);;
+        font-size: 24px;
+        font-weight: bold;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+        top: 5px;
+        width: 20px;
+    }
+    
+    .closebutton:hover {
+        background: rgba(0,0,0,0.5);
+        cursor: pointer;
     }
     
     /*

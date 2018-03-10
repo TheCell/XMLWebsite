@@ -8,7 +8,7 @@
 
 	<xsl:output method="html"/>
     <xsl:template match="sc:index">
-        <div class="buildinginfo">
+        <div id="buildinginfo"> 
             <xsl:apply-templates select="document('../DBs/roomDB.xml')//room/in_building[text()='Schwimmbad']"/>
         </div>
     </xsl:template>
