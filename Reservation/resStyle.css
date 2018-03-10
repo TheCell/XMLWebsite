@@ -5,6 +5,7 @@
     width: 25em;
     list-style: none;
     padding: 0;
+    margin: auto;
 }
 
 .tabs li {
@@ -53,30 +54,92 @@ h1{
 
 h3{
     font-size: large;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 a{
     color: inherit;
+    font-size: 24px;
 }
-
 
 
 table{
     text-align: left;
-    border-bottom: 1px solid black;
     margin: 0;
     padding-right: 100px;
     border-collapse: collapse;
+    float: left;
 }
 caption{
-    text-align: left
+    text-align: left;
 }
 
 td{
-    padding-right: 50px; margin: 0px 0px 0px 0px
+    padding-right: 50px;
+    margin: 0px 0px 0px 0px;
 }
 
 tr{
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+}
+
+.dark > td{
+    background-color: lightgrey;
+}
+.bright{
+    background-color: ivory;
+}
+
+form {
+    background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE);
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE);
+    background: linear-gradient(bottom, #CCCCCC, #EEEEEE);
+    margin: auto;
+    position: relative;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]{
+    width: 500px;
+}
+
+input[placeholder]{
+    color: darkgrey;
+}
+
+input[value]{
+    color: black;
+}
+
+input[type="submit"]{
+    background-color: lightgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type="submit"]{
+    color: black;
+    font-weight: bold;
+}
+
+#reservation div{
+    padding: 0;
+}
+
+p{
+    padding-top: 10px;
 }

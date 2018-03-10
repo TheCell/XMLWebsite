@@ -10,16 +10,33 @@
                 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
                 <title>Sportzentrum Hopfendorf</title>
                 <link rel="stylesheet" type="text/css" href="resStyle.css"/>
+                <link rel="stylesheet" type="text/css" href="../style.css"/>
                 <link rel="php" type="php" href="process.php"/>
             </head>
-            <body>
+            <body onload="init()">
+                <div class="header">
+                <div id="logo">
+                    <img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/>
+                </div>
+                <div class="menu">
+                    <div class="menuitems">
+                        <div class="menuitem">
+                            <a href="#courses" class="trigger">Kurse</a></div>
+                        <div class="menuitem">
+                            <a href="#rooms" class="trigger">Räume</a></div>
+                        <div class="menuitem">
+                            <a href="#equip" class="trigger">Geräte</a></div>
+                    </div>
+                </div>
+                </div>
+
                 <ul class="tabs">
                     <li id="reservation">
                         <div class="content">
                             <form name="myform" method="POST" action="process.php">
                                 <h1>Reservieren von:</h1>
                                 <p>Name:
-                                    <input name="username" value="Username"/>
+                                    <input name="username" value="" placeholder="Username"/>
                                 </p>
                                 <p>Reservieren von:
                                     <input type="date" name="dateFrom" value=""/>
@@ -32,7 +49,7 @@
                                     <input type="time" name="timeTo" value=""/>
                                 </p>
                                 <p>Bemerkung:
-                                    <input name="note" type="text" value="Bemerkung"/>
+                                    <input name="note" value="" placeholder="Bemerkung"/>
                                 </p>
                                 <?php echo "<input type='text' name='ID' value='".$_GET['data']."'/>"; ?>
                                 <p class="submit">
@@ -47,7 +64,6 @@
                         </div>
                     </li>
                     <li id="courses">
-                        <a href="#courses" class="trigger">Kurse</a>
                         <div class="content">
                             <ul>
                                 <xsl:apply-templates select="document(courses/@name)"/>
@@ -55,7 +71,6 @@
                         </div>
                     </li>
                     <li id="rooms">
-                        <a href="#rooms" class="trigger">Räume</a>
                         <div class="content">
                             <ul>
                                 <xsl:apply-templates select="document(rooms/@name)"/>
@@ -63,7 +78,6 @@
                         </div>
                     </li>
                     <li id="equip">
-                        <a href="#equip" class="trigger">Geräte</a>
                         <div class="content">
                             <ul>
                                 <xsl:apply-templates select="document(equip/@name)"/>
