@@ -23,10 +23,23 @@
                     <xsl:value-of select="../description/text()"/>
                 </div>
                 <div class="equipment">
-                    
+                    <xsl:apply-templates select="document('../DBs/equipmentDB.xml')//item/roomID">
+                        <xsl:with-param name="room">
+                            <xsl:value-of select="../@id"/>
+                        </xsl:with-param>
+                    </xsl:apply-templates>
                 </div>
             </div>
         </div>
+    </xsl:template>
+    
+    <xsl:template match="//item/roomID">
+        <xsl:param name="room"/>
+        <xsl:if test="text() = $room">
+            <div class="equipment-item">
+                <xsl:value-of select="../name/text()"/> (<xsl:value-of select="../description/text()"/>)
+            </div>
+        </xsl:if>
     </xsl:template>
     
 </xsl:stylesheet>
