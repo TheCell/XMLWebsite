@@ -3,14 +3,64 @@ body:after
 	background-image: none;
 }
 
+/* Das ist alles nur gebastelt, I feel ashamed */
 .calendar
 {
 	display: grid;
 	grid-template-columns: 100px repeat(5, 1fr);
-	grid-template-rows: 50px repeat(6, 1fr);
+	grid-template-rows: 50px repeat(7, 1fr);
 	grid-auto-rows: minmax(100px, auto);
 	height: 700px;
 	margin: 10px;
+}
+
+.calendarDateFormated
+{
+	padding: 5px;
+}
+
+.dateRow
+{
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	grid-column: 1 / 8;
+	grid-row: 1;
+}
+
+.dateRowDateOne
+{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	grid-column: 2 / span 1;
+	grid-row: 1;
+}
+
+.dateRowDateTwo
+{
+	border-right: 1px solid black;
+	grid-column: 3 / span 1;
+	grid-row: 1;
+}
+
+.dateRowDateThree
+{
+	border-right: 1px solid black;
+	grid-column: 4 / span 1;
+	grid-row: 1;
+}
+
+.dateRowDateFour
+{
+	border-right: 1px solid black;
+	grid-column: 5 / span 1;
+	grid-row: 1;
+}
+
+.dateRowDateFive
+{
+	grid-column: 6 / span 1;
+	grid-row: 1;
 }
 
 .dayOne
