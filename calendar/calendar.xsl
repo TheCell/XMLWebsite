@@ -17,16 +17,15 @@
             </head>
             <body>
 				<div class="header">
-					<div id="logo">Place Logo here</div>
+					<div id="logo">
+						<img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/>
+					</div>
 					<div class="menu">
-						<div class="menuitem">
-							<a>Anmelden</a>
-						</div>
-						<div class="menuitem">
-							<a href="calendar.xhtml">Kalender</a>
-						</div>
-						<div class="menuitem">
-							<a>Angebote</a>
+						<div class="menuitems">
+							<div class="menuitem"><a href="../index.xhtml" >Startseite</a></div>
+							<div class="menuitem"><a>Anmelden</a></div>
+							<div class="menuitem"><a href="calendar.php">Kalender</a></div>
+							<div class="menuitem"><a>Angebote</a></div>
 						</div>
 					</div>
 				</div>
@@ -78,6 +77,12 @@
 					
 					<xsl:apply-templates 
 						select="document('../DBs/coursesDB.xml')"/>
+				</div>
+				<div class="footer">
+					<div class="footeritems">
+						<div class="impressum">Place impressum here</div>
+						<div class="copyright">Place copyright here</div>
+					</div>
 				</div>
             </body>
         </html>
