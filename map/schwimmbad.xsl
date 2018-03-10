@@ -8,15 +8,25 @@
 
 	<xsl:output method="html"/>
     <xsl:template match="sc:index">
-        <div>
+        <div class="buildinginfo">
             <xsl:apply-templates select="document('../DBs/roomDB.xml')//room/in_building[text()='Schwimmbad']"/>
         </div>
     </xsl:template>
     
     <xsl:template match="//room/in_building[text()='Schwimmbad']">
-        <p>
-        <xsl:value-of select="../name/text()"/>
-        </p>
+        <div class="room">
+            <div class="roomname">
+                <xsl:value-of select="../name/text()"/>
+            </div>
+            <div class="roomdetail">
+                <div class="description">
+                    <xsl:value-of select="../description/text()"/>
+                </div>
+                <div class="equipment">
+                    
+                </div>
+            </div>
+        </div>
     </xsl:template>
     
 </xsl:stylesheet>
