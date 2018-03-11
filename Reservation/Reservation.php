@@ -4,7 +4,7 @@ $get = "";
 function save($id){
     global $get;
     $get= $id;
-
+    load();
 }
 
 /**

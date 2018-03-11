@@ -10,6 +10,7 @@
 
 .tabs li {
     float: left;
+    margin-top: -300px;
 }
 
 .trigger {
@@ -98,7 +99,7 @@ form {
     background: linear-gradient(bottom, #CCCCCC, #EEEEEE);
     margin: auto;
     position: relative;
-    width: auto;
+    width: 350px;
     height: auto;
     font-size: 14px;
     line-height: 24px;
@@ -114,7 +115,11 @@ form {
 }
 
 input[type="text"]{
-    width: 500px;
+    width: 150px;
+}
+
+input[type="password"]{
+    width: 230px;
 }
 
 input[placeholder]{
@@ -142,4 +147,10 @@ input[type="submit"]{
 
 p{
     padding-top: 10px;
+}
+
+.menuitem a{
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
 }
