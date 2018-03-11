@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-				xmlns:sc="https://thecell.eu/xmlsportcenter" 
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+				xmlns:sc="https://thecell.eu/xmlsportcenter"
 				xmlns:xhtml="http://www.w3.org/1999/xhtml"
 				version="1.0">
     <xsl:output method="html"/>
@@ -30,7 +30,7 @@
 					</div>
 				</div>
 				<!-- Load the database and apply templates -->
-				
+
 				<div class="recommendedSelection">
 					<form type="submit" method="get" action="calendar.php" class="calendarForm">
 						<div class="inputField Alle">
@@ -63,7 +63,7 @@
 						</div>
 					</form>
 				</div>
-				
+
 				<div class="calendar">
 					<div class="dateRow">Zeit / Daten</div>
 					<div class="zeroToFour">
@@ -114,24 +114,24 @@
 					<div class="dateRowDateFive calendarDateFormated">
 						<xsl:value-of select="$currentDatePlusFour" />
 					</div>
-					
-					<xsl:apply-templates 
+
+					<xsl:apply-templates
 						select="document('../DBs/coursesDB.xml')"/>
 				</div>
 				<div class="footer">
 					<div class="footeritems">
-						<div class="impressum">Place impressum here</div>
-						<div class="copyright">Place copyright here</div>
+						<div class="impressum">Designed and developed by: Joel Salzmann, Larissa Schuler, Pascal Stalder, Simon Hischier</div>
+						<div class="copyright">Sportzentrum Hopfentee</div>
 					</div>
 				</div>
             </body>
         </html>
     </xsl:template>
-    
+
     <!-- create templates for the database entries -->
 	<xsl:template match="courses">
 			<!-- <xsl:value-of select="$recommendedFor" /> -->
-			
+
 			<xsl:for-each select="course[contains(.,$recommendedFor)]">
 				<xsl:call-template name="course">
 					<!--<xsl:with-param name="title" select = "title" />-->
@@ -153,7 +153,7 @@
 			</xsl:for-each>
 			<!--<xsl:apply-templates />-->
 	</xsl:template>
-	
+
 	<xsl:template name="course" >
 		<xsl:param name="recommendedFor" />
 		<xsl:param name="currentDate" />
@@ -164,23 +164,23 @@
 		<xsl:param name="currentDateMinusOne" />
 		<xsl:variable name="dayTime">
 			<xsl:choose>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 200000">
 					divAttrib timeTwentyToTwentyFour
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 160000">
 					divAttrib timeSixteenToTwenty
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 120000">
 					divAttrib timeTwelveToSixteen
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 080000">
 					divAttrib timeEightToTwelve
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(timeFrom/text(),1,8),':','')) > 040000">
 					divAttrib timeFourToEight
 				</xsl:when>
@@ -191,52 +191,52 @@
 		</xsl:variable>
 		<xsl:variable name="dateRelativeToStart">
 			<xsl:choose>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > number(translate(substring($currentDatePlusFour,1,10),'-',''))">
 					divAttrib notInNextFiveDays
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > number(translate(substring($currentDatePlusThree,1,10),'-',''))">
 					divAttrib dayFive
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > number(translate(substring($currentDatePlusTwo,1,10),'-',''))">
 					divAttrib dayFour
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > number(translate(substring($currentDatePlusOne,1,10),'-',''))">
 					divAttrib dayThree
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')))">
 					divAttrib dayTwo
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > number(translate(substring($currentDateMinusOne,1,10),'-',''))">
 					divAttrib dayOne
 				</xsl:when>
 				<!--
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) + 4)">
 					divAttrib notInNextFiveDays
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) + 3)">
 					divAttrib dayFive
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) + 2)">
 					divAttrib dayFour
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) + 1)">
 					divAttrib dayThree
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')))">
 					divAttrib dayTwo
 				</xsl:when>
-				<xsl:when 
+				<xsl:when
 					test="number(translate(substring(dateFrom/text(),1,10),'-','')) > (number(translate(substring($currentDate,1,10),'-','')) - 1)">
 					divAttrib dayOne
 				</xsl:when>
@@ -267,7 +267,7 @@
 			<!--Recommended for <xsl:value-of select="recommendedFor" />-->
 		</div>
 	</xsl:template>
-	
+
 	<!-- test
 	<xsl:template match="course[contains(.,'Alle')]">
 		<br />
@@ -277,7 +277,7 @@
 		<br />
 	</xsl:template>
 	-->
-	
+
     <!--
 	<xsl:template match="course">
 		<div class="calendarItem">
@@ -285,5 +285,5 @@
 		</div>
     </xsl:template>
 	-->
-    
+
 </xsl:stylesheet>

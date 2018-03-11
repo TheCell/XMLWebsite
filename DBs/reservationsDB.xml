@@ -18,4 +18,40 @@
         <note/>
         <entityID>E034</entityID>
     </reservation>
-</reservations>
+    <reservation>
+        <username>Peter</username>
+        <dateFrom>2018-03-11</dateFrom>
+        <dateTo>2018-03-11</dateTo>
+        <timeFrom>00:00:00</timeFrom>
+        <timeTo>00:02:00</timeTo>
+        <note>qwer</note>
+        <entityID>E001</entityID>
+    </reservation>
+    <reservation>
+        <username>Peter</username>
+        <dateFrom>2018-03-11</dateFrom>
+        <dateTo>2018-03-11</dateTo>
+        <timeFrom>00:00:00</timeFrom>
+        <timeTo>00:02:00</timeTo>
+        <note>asdf</note>
+        <entityID>E001</entityID>
+    </reservation>
+    <reservation>
+        <username>Peter</username>
+        <dateFrom>2018-03-11</dateFrom>
+        <dateTo>2018-03-11</dateTo>
+        <timeFrom>00:00:00</timeFrom>
+        <timeTo>00:02:00</timeTo>
+        <note>asdf</note>
+        <entityID>E001</entityID>
+    </reservation>
+    <reservation>
+        <username>Peter</username>
+        <dateFrom>2018-03-11</dateFrom>
+        <dateTo>2018-03-11</dateTo>
+        <timeFrom>00:00:00</timeFrom>
+        <timeTo>00:02:00</timeTo>
+        <note>asdf1</note>
+        <entityID>E001</entityID>
+    </reservation>
+<reservation><username>Peter</username><dateFrom>2018-03-11</dateFrom><dateTo>2018-03-11</dateTo><timeFrom>00:00:00</timeFrom><timeTo>00:02:00</timeTo><note>asdf</note><entityID>E001</entityID></reservation></reservations>

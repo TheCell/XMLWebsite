@@ -2,46 +2,37 @@
 
 $get = "";
 
-function alreadyReserved(){
+function alreadyReserved()
+{
 
-}
-
-function handOver(){
-    global $get;
-    $get = $_GET['data'];
 }
 
 
 //Check whether the form has been submitted
-if (!empty($_POST)) {
+if (isset($_POST)) {
     $xml = simplexml_load_file('..\DBs\reservationsDB.xml');
 
 
     foreach ($xml->reservation as $id) {
-        if ($id->entityID == $_POST['ID'] && (($id->dateFrom <= $_POST['dateFrom'] && $id->dateTo >= $_POST['dateFrom']) || ($id->dateFrom <= $_POST['dateTo'] && $id->dateTo >= $_POST['dateTo'])) && (($id->timeFrom <= $_POST['timeFrom'] && $id->timeTo >= $_POST['timeFrom']) || ($id->timeFrom >= $_POST['timeTo'] && $id->timeTo >= $_POST['timeTo']))) {
-            alreadyReserved();
-        }
-    }
-    $res = $xml->addChild("reservation");
-    $res->addChild("username", $_POST['username']);
-    $res->addChild("dateFrom", $_POST['dateFrom']);
-    $res->addChild("dateTo", $_POST['dateTo']);
-    $res->addChild("timeFrom", $_POST['timeFrom'] . ":00");
-    $res->addChild("timeTo", $_POST['timeTo'] . ":00");
-    $res->addChild("note", $_POST['note']);
-    $res->addChild("entityID", $_POST['ID']);
-$xml->asXML('..\DBs\reservationsDB.xml');
 
+        if ($id->entityID == $_POST['ID']) {
+            if (new DateTime($id->dateFrom) <= new DateTime($_POST['dateFrom']) && new DateTime($id->dateTo) >= new DateTime($_POST['dateFrom']) || new DateTime($id->dateFrom) <= new DateTime($_POST['dateTo']) && new DateTime($id->dateTo) >= new DateTime($_POST['dateTo'])) {
+                if (new DateTime($id->timeFrom) <= new DateTime($_POST['timeFrom']) && new DateTime($id->timeTo) >= new DateTime($_POST['timeFrom']) || (new DateTime($id->timeFrom) >= new DateTime($_POST['timeTo']) && new DateTime($id->timeTo) >= new DateTime($_POST['timeTo']))) {
+                    header("location: Reservation.php#feedbacknegativ");
+                    exit;
+                }
+            }
+        }
+        $res = $xml->addChild("reservation");
+        $res->addChild("username", $_POST['username']);
+        $res->addChild("dateFrom", $_POST['dateFrom']);
+        $res->addChild("dateTo", $_POST['dateTo']);
+        $res->addChild("timeFrom", $_POST['timeFrom'] . ":00");
+        $res->addChild("timeTo", $_POST['timeTo'] . ":00");
+        $res->addChild("note", $_POST['note']);
+        $res->addChild("entityID", $_POST['ID']);
+        $xml->asXML('..\DBs\reservationsDB.xml');
+        header("Location: Reservation.php#feedbackpositiv");
+        exit;
+    }
 }
-?>
-<html content="application/xml">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Sportzentrum Hopfendorf</title>
-    <link rel="stylesheet" type="text/css" href="resStyle.css"/>
-    <link rel="php" type="php" href="process.php"/>
-</head>
-<body>
-<?php echo ":".$_POST['ID'].":"; ?>
-</body>
-</html>

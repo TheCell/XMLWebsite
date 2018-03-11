@@ -71,11 +71,16 @@
                                 </form>
                             </div>
                         </li>
-                        <li id="feedback">
+                        <li id="feedbackpositiv">
                             <div class="content">
-                                <h1>feedback</h1>
+                                <h1>Vielen Dank für die Reservation</h1>
                             </div>
                         </li>
+                        <li id="feedbacknegativ">
+                        <div class="content">
+                            <h1>Dies ist zu dieser Zeit leider schon reserviert.<br/> versuchen sie eine andere Zeit</h1>
+                        </div>
+                    </li>
                         <li id="courses">
                             <div class="content">
                                 <ul>
@@ -98,6 +103,12 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+                <div class="footer">
+                    <div class="footeritems">
+                        <div class="impressum">Designed and developed by: Joel Salzmann, Larissa Schuler, Pascal Stalder, Simon Hischier</div>
+                        <div class="copyright">Sportzentrum Hopfentee</div>
+                    </div>
                 </div>
             </body>
 
