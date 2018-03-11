@@ -10,6 +10,7 @@
 
 .tabs li {
     float: left;
+    margin-top: -300px;
 }
 
 .trigger {

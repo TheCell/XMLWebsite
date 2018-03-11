@@ -19,12 +19,12 @@
             <body onload="init()">
                 <div class="header">
                     <div id="logo">
-                        <img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/>
+                        <a href="../index.xhtml"><img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/></a>
                     </div>
                     <div class="menu">
                         <div class="menuitems">
                             <div class="menuitem">
-                                <a href="../index.xhtml">Startseite</a>
+                                <a href="../index.xhtml#item-1">Startseite</a>
                             </div>
                             <div class="menuitem">
                                 <a href="#courses" class="trigger">Kurse</a>
