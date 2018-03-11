@@ -120,6 +120,186 @@
         <courseReservationIDs />
         <description>Gemeinsames Bouldern</description>
     </course>
+	<course id="C009">
+        <name>Bouldern</name>
+        <dateFrom>2018-03-14</dateFrom>
+        <dateTo>2018-03-14</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>10:00:00</timeFrom>
+        <timeTo>13:00:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Geistig eingeschränkt, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Gemeinsames Bouldern</description>
+    </course>
+	<course id="C010">
+        <name>Bouldern</name>
+        <dateFrom>2018-03-17</dateFrom>
+        <dateTo>2018-03-17</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>10:00:00</timeFrom>
+        <timeTo>13:00:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Alle</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Gemeinsames Bouldern</description>
+    </course>
+	<course id="C011">
+        <name>Bouldern</name>
+        <dateFrom>2018-03-21</dateFrom>
+        <dateTo>2018-03-21</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>10:00:00</timeFrom>
+        <timeTo>13:00:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Geistig eingeschränkt, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Gemeinsames Bouldern</description>
+    </course>
+	<course id="C012">
+        <name>Bouldern</name>
+        <dateFrom>2018-03-25</dateFrom>
+        <dateTo>2018-03-25</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>10:00:00</timeFrom>
+        <timeTo>13:00:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Alle</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Gemeinsames Bouldern</description>
+    </course>
+	<course id="C013">
+        <name>Bouldern</name>
+        <dateFrom>2018-03-29</dateFrom>
+        <dateTo>2018-03-29</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>10:00:00</timeFrom>
+        <timeTo>13:00:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Geistig eingeschränkt, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Gemeinsames Bouldern</description>
+    </course>
+	<course id="C014">
+        <name>Bouldern</name>
+        <dateFrom>2018-04-03</dateFrom>
+        <dateTo>2018-04-03</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>10:00:00</timeFrom>
+        <timeTo>13:00:00</timeTo>
+        <level>Fortgeschrittene</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Alle</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Gemeinsames Bouldern</description>
+    </course>
+    <course id="C015">
+        <name>Klettern</name>
+        <dateFrom>2018-03-15</dateFrom>
+        <dateTo>2018-03-15</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Anfänger</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Klettern als Gruppe</description>
+    </course>
+    <course id="C030">
+        <name>Klettern</name>
+        <dateFrom>2018-03-15</dateFrom>
+        <dateTo>2018-03-15</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Anfänger</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Klettern als Gruppe</description>
+    </course>
+    <course id="C016">
+        <name>Klettern</name>
+        <dateFrom>2018-03-20</dateFrom>
+        <dateTo>2018-03-20</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Anfänger</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Klettern als Gruppe</description>
+    </course>
+    <course id="C017">
+        <name>Klettern</name>
+        <dateFrom>2018-03-24</dateFrom>
+        <dateTo>2018-03-24</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Anfänger</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Klettern als Gruppe</description>
+    </course>
+    <course id="C018">
+        <name>Klettern</name>
+        <dateFrom>2018-03-27</dateFrom>
+        <dateTo>2018-03-27</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Anfänger</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Klettern als Gruppe</description>
+    </course>
+    <course id="C019">
+        <name>Klettern</name>
+        <dateFrom>2018-04-02</dateFrom>
+        <dateTo>2018-04-02</dateTo>
+        <reoccurrance>einmalig</reoccurrance>
+        <timeFrom>17:00:00</timeFrom>
+        <timeTo>21:00:00</timeTo>
+        <level>Anfänger</level>
+        <state>aktiv</state>
+        <maxParticipants>10</maxParticipants>
+        <recommendedFor>Normal, Amputation</recommendedFor>
+        <language>Deutsch</language>
+        <courseReservationIDs />
+        <description>Klettern als Gruppe</description>
+    </course>
     <!--
     <course id="C012">
         <name>Zumba</name>
