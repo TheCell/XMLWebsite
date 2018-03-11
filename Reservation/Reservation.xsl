@@ -12,80 +12,89 @@
                 <title>Sportzentrum Hopfendorf</title>
                 <link rel="stylesheet" type="text/css" href="resStyle.css"/>
                 <link rel="stylesheet" type="text/css" href="../style.css"/>
+                <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
                 <link rel="php" type="php" href="process.php"/>
             </head>
             <body onload="init()">
                 <div class="header">
-                <div id="logo">
-                    <img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/>
-                </div>
-                <div class="menu">
-                    <div class="menuitems">
-                        <div class="menuitem">
-                            <a href="#courses" class="trigger">Kurse</a></div>
-                        <div class="menuitem">
-                            <a href="#rooms" class="trigger">Räume</a></div>
-                        <div class="menuitem">
-                            <a href="#equip" class="trigger">Geräte</a></div>
+                    <div id="logo">
+                        <img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/>
+                    </div>
+                    <div class="menu">
+                        <div class="menuitems">
+                            <div class="menuitem">
+                                <a href="../index.xhtml">Startseite</a>
+                            </div>
+                            <div class="menuitem">
+                                <a href="#courses" class="trigger">Kurse</a>
+                            </div>
+                            <div class="menuitem">
+                                <a href="#rooms" class="trigger">Räume</a>
+                            </div>
+                            <div class="menuitem">
+                                <a href="#equip" class="trigger">Geräte</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
 
-                <ul class="tabs">
-                    <li id="reservation">
-                        <div class="content">
-                            <form name="myform" method="POST" action="process.php">
-                                <h1>Reservieren von:</h1>
-                                <p>Name:
-                                    <input name="username" value="" placeholder="Username"/>
-                                </p>
-                                <p>Reservieren von:
-                                    <input type="date" name="dateFrom" value=""/>
-                                bis:
-                                    <input type="date" name="dateTo" value=""/>
-                                </p>
-                                <p>Zeit von:
-                                    <input type="time" name="timeFrom" value=""/>
-                                bis:
-                                    <input type="time" name="timeTo" value=""/>
-                                </p>
-                                <p>Bemerkung:
-                                    <input name="note" value="" placeholder="Bemerkung"/>
-                                </p>
-                                <input type="hidden" name="ID" value="{$ID}"/>
-                                <p class="submit">
-                                    <input type="submit" value="Reservieren"/>
-                                </p>
-                            </form>
-                        </div>
-                    </li>
-                    <li id="feedback">
-                        <div class="content">
-                            <h1>feedback</h1>
-                        </div>
-                    </li>
-                    <li id="courses">
-                        <div class="content">
-                            <ul>
-                                <xsl:apply-templates select="document(//courses/@name)"/>
-                            </ul>
-                        </div>
-                    </li>
-                    <li id="rooms">
-                        <div class="content">
-                            <ul>
-                                <xsl:apply-templates select="document(//rooms/@name)"/>
-                            </ul>
-                        </div>
-                    </li>
-                    <li id="equip">
-                        <div class="content">
-                            <ul>
-                                <xsl:apply-templates select="document(//equip/@name)"/>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                <div class="main">
+                    <ul class="tabs">
+                        <li id="reservation">
+                            <div class="content">
+                                <form name="myform" method="POST" action="process.php">
+                                    <h1>Reservieren von:</h1>
+                                    <p>Name:
+                                        <input name="username" value="" placeholder="Username"/>
+                                    </p>
+                                    <p>Reservieren von:
+                                        <input type="date" name="dateFrom" value=""/>
+                                        bis:
+                                        <input type="date" name="dateTo" value=""/>
+                                    </p>
+                                    <p>Zeit von:
+                                        <input type="time" name="timeFrom" value=""/>
+                                        bis:
+                                        <input type="time" name="timeTo" value=""/>
+                                    </p>
+                                    <p>Bemerkung:
+                                        <input name="note" value="" placeholder="Bemerkung"/>
+                                    </p>
+                                    <input type="hidden" name="ID" value="{$ID}"/>
+                                    <p class="submit">
+                                        <input type="submit" value="Reservieren"/>
+                                    </p>
+                                </form>
+                            </div>
+                        </li>
+                        <li id="feedback">
+                            <div class="content">
+                                <h1>feedback</h1>
+                            </div>
+                        </li>
+                        <li id="courses">
+                            <div class="content">
+                                <ul>
+                                    <xsl:apply-templates select="document(//courses/@name)"/>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="rooms">
+                            <div class="content">
+                                <ul>
+                                    <xsl:apply-templates select="document(//rooms/@name)"/>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="equip">
+                            <div class="content">
+                                <ul>
+                                    <xsl:apply-templates select="document(//equip/@name)"/>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </body>
 
         </html>
