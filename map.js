@@ -52,6 +52,23 @@ function getContent(filename)
             }
         }
     }
-    
     document.getElementById("buildingoutput").style.display = "block";
+}
+
+function showRoomDetail (item) {
+    console.log(item);
+    if (item !== null) {
+        item.nextSibling.style.display = 'block';
+        item.style.display = 'none';
+        item.parentNode.lastChild.style.display = 'block';
+    }
+}
+
+function hideRoomDetail(item) {
+    console.log(item);
+    if (item !== null) {
+        item.previousSibling.style.display = 'block';
+        item.style.display = 'none';
+        item.parentNode.lastChild.style.display = 'none';
+    }
 }
