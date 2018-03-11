@@ -1,5 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns="http://www.w3.org/1999/xhtml">
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:php="http://php.net/xsl">
 
     <xsl:template match="//equip">
         <?php
@@ -19,7 +20,7 @@
             <body onload="init()">
                 <div class="header">
                     <div id="logo">
-                        <a href="../index.xhtml"><img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/></a>
+                        <a href="../index.xhtml#item-1"><img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/></a>
                     </div>
                     <div class="menu">
                         <div class="menuitems">
@@ -27,13 +28,13 @@
                                 <a href="../index.xhtml#item-1">Startseite</a>
                             </div>
                             <div class="menuitem">
-                                <a href="#courses" class="trigger">Kurse</a>
+                                <a href="Reservation.php#courses" class="trigger">Kurse</a>
                             </div>
                             <div class="menuitem">
-                                <a href="#rooms" class="trigger">Räume</a>
+                                <a href="Reservation.php#rooms" class="trigger">Räume</a>
                             </div>
                             <div class="menuitem">
-                                <a href="#equip" class="trigger">Geräte</a>
+                                <a href="Reservation.php#equip" class="trigger">Geräte</a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +62,9 @@
                                     <p>Bemerkung:
                                         <input name="note" value="" placeholder="Bemerkung"/>
                                     </p>
-                                    <input type="hidden" name="ID" value=""/>
+                                    <p>
+                                        <xsl:value-of disable-output-escaping="yes" select="php:function('show')"/>
+                                    </p>
                                     <p class="submit">
                                         <input type="submit" value="Reservieren"/>
                                     </p>
@@ -106,7 +109,7 @@
         <xsl:if test="state = 'aktiv'">
             <table>
                 <caption>
-                    <a href="#reservation" onclick="">
+                    <a href="Reservation.php?data={@id}#reservation">
                         <h3>
                             <xsl:value-of select="name"/>
                         </h3>
@@ -200,7 +203,7 @@
     <xsl:template name="rooms" match="//room">
         <table>
             <caption>
-                <a href="#reservation" onclick="save({@id})">
+                <a href="Reservation.php?data={@id}#reservation">
                     <h3>
                         <xsl:value-of select="name"/>
                     </h3>
@@ -229,7 +232,7 @@
     <xsl:template name="equipment" match="//item">
         <table>
             <caption>
-                <a href="?data={@id}#reservation">
+                <a href="Reservation.php?data={@id}#reservation">
                     <h3>
                         <xsl:value-of select="name"/>
                     </h3>

@@ -254,6 +254,11 @@
         width: 100%;
     }
 
+    .coursesOffers p{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
 @media only screen and (min-width:756px){
     
     .header:after {
