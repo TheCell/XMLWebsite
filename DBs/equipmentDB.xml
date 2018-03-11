@@ -205,4 +205,14 @@
         <roomID>R065</roomID>
         <description></description>
     </item>
+    <item id="E042">
+        <name>Lokomat</name>
+        <roomID>R061</roomID>
+        <description>Therapiegerät zur Behandlung mobilitätseingeschränkter Menschen</description>
+    </item>
+    <item id="E043">
+        <name>Armeo</name>
+        <roomID>R061</roomID>
+        <description>Therapiegerät zur Behandlung mobilitätseingeschränkter Menschen</description>
+    </item>
 </equipment>
