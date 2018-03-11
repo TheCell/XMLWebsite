@@ -6,35 +6,16 @@
     padding: 0;
 }
 
-@media only screen and (max-width:756px) {
-    
-}
-
-@media only screen and (min-width:756px){
-    
     .header {
         color: #FFF;
     }
     
-    .header:after {
-        content: "";
-        clear: both;
-        display: block;
-        line-height: 0;
+    #logo {
+        padding: 15px;
     }
 
-    #logo {
-        margin: 0 auto;
-        padding: 15px;
-        width: 1000px;
-    }
-    
-    #logo img {
-        height: 140px;
-    }
-    
     .teaser {
-        height: 350px;
+        height: 200px;
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -52,7 +33,7 @@
         background: #FFF;
         display: block;
         position: absolute;
-        top: 160px;
+        top: 90px;
         z-index: 100;
     }
     
@@ -76,7 +57,7 @@
     
     .teaser .teaser-item {
         float: left;
-        height: 350px;
+        height: 200px;
         left: 100%;
         opacity: 0;
         position: absolute;
@@ -95,7 +76,7 @@
     }
     
     .teaser .teaser-item-image {
-        height: 350px;
+        height: 200px;
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -103,31 +84,22 @@
     
     .teaser .teaser-item-image img {
         position: absolute;
-        top: -175px;
+        top: -100px;
     }
     
     .teaser .teaser-item-text {
         color: #FFF;
-        font-size: 42px;
+        font-size: 32px;
         font-weight: bold;
         position: absolute;
-        top: 40%;
-        left: 35%;
+        top: 5%;
+        left: 15%;
     }
     
     .main {
-        background: rgba(255,255,255,0.8);
         color: #000;
-        margin: 0 auto;
-        padding: 25px 0;
-        width: 1000px;
-    }
-    
-    .main:after {
-        content: "";
-        clear: both;
-        display: block;
-        line-height: 0;
+        padding: 25px 10px;
+        width: 100%;
     }
     
     .main .section-title {
@@ -147,11 +119,10 @@
     }
     
     .footeritems {
-        margin: 0 auto;
         padding: 15px;
-        width: 1000px;
+        width: 100%;
     }
-
+    
     /*
     menu
     */
@@ -161,22 +132,13 @@
     }
     
     .menuitems {
-        margin: 0 auto;
-        padding: 0 15px;
-        width: 1000px;
-    }
-    
-    .menuitems:after {
-        content: "";
-        clear: both;
-        display: block;
-        line-height: 0;
+        width: 100%;
     }
 
     .menuitem {
         color: #FFF;
-        float: left;
         font-size: 24px;
+        width: 100%;
     }
     
     .menuitem a {
@@ -197,10 +159,8 @@
     map
     */
     .map {
-        float: left;
-        padding: 0 15px;
         position: relative;
-        width: 60%;
+        width: 100%;
     }
     
     svg {
@@ -215,25 +175,21 @@
     #buildingoutput {
         background: rgba(255,255,255,0.9);
         border-radius: 5px;
-        bottom: 0;
+        bottom: 150px;
         box-shadow: 0 0 10px;
         display: none;
         height: 250px;
-        left: 0;
-        margin: auto;
         overflow: hidden;
-        padding: 10px;
+        padding: 5px;
         position: absolute;
-        right: 0;
-        top: 0;
-        width: 500px;
+        width: 100%;
         z-index: 100;
     }
     
     #buildinginfo {
         height: 200px;
         overflow-y: scroll;
-        width: 480px;
+        width: 100%;
     }
     
     .room {
@@ -279,6 +235,132 @@
     
     .roomdetail {
         display: none;
+        padding-left: 15px;
+    }
+    
+    /*
+    news
+    */
+    .news {
+        width: 100%;
+    }
+
+@media only screen and (min-width:756px){
+    
+    .header:after {
+        content: "";
+        clear: both;
+        display: block;
+        line-height: 0;
+    }
+
+    #logo {
+        margin: 0 auto;
+        width: 1000px;
+    }
+    
+    #logo img {
+        height: 140px;
+    }
+    
+    .teaser {
+        height: 350px;
+    }
+    
+    .teaser-nav {
+        top: 160px;
+    }
+    
+    .teaser .teaser-item {
+        height: 350px;
+    }
+    
+    .teaser .teaser-item-image {
+        height: 350px;
+    }
+    
+    .teaser .teaser-item-image img {
+        top: -175px;
+    }
+    
+    .teaser .teaser-item-text {
+        font-size: 42px;
+        top: 40%;
+        left: 35%;
+    }
+    
+    .main {
+        margin: 0 auto;
+        padding: 25px 0;
+        width: 1000px;
+    }
+    
+    .main:after {
+        content: "";
+        clear: both;
+        display: block;
+        line-height: 0;
+    }
+    
+    .footeritems {
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    /*
+    menu
+    */
+    .menu {
+        background: rgba(0,0,0,0.8);
+        width: 100%;
+    }
+    
+    .menuitems {
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 1000px;
+    }
+    
+    .menuitems:after {
+        content: "";
+        clear: both;
+        display: block;
+        line-height: 0;
+    }
+
+    .menuitem {
+        float: left;
+        width: auto;
+    }
+    
+    /*
+    map
+    */
+    .map {
+        float: left;
+        padding: 0 15px;
+        width: 60%;
+    }
+    
+    #buildingoutput {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        padding: 10px;
+        right: 0;
+        top: 0;
+        width: 500px;
+    }
+    
+    #buildinginfo {
+        width: 480px;
+    }
+    
+    .roomname {
+        padding-left: 25px;
+    }
+    
+    .roomdetail {
         padding-left: 25px;
     }
     
