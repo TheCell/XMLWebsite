@@ -1,10 +1,30 @@
 <?php
 
-$get = "";
+$get = "C001";
+
+if (isset($_GET['data'])){
+    save($_GET['data']);
+}
+
+
 function save($id){
     global $get;
     $get= $id;
-    load();
+}
+
+
+
+function show(){
+    global $get;
+    return "<input type='hidden' name='ID' value='".$get."'/>";
+}
+
+function aO($id){
+    return "<a href='#reservation' onclick=\"save(".$id.")\" >";
+}
+
+function aC(){
+    return "</a>";
 }
 
 /**
@@ -31,7 +51,6 @@ function load()
     $processor = new XSLTProcessor();
     $processor->registerPHPFunctions();
     $processor->importStylesheet($xsl);
-    $processor->setParameter('', 'ID', $get);
     $dom = $processor->transformToDoc($xml);
 
 // send result to client
