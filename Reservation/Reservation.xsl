@@ -1,10 +1,10 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/1999/xhtml">
 
-    <xsl:template match="/">
-        <xsl:param name="ID"/>
+    <xsl:template match="//equip">
         <?php
                 include "process.php";
+                include "Reservation.php";
                 ?>
         <html content="application/xml">
             <head>
@@ -14,6 +14,7 @@
                 <link rel="stylesheet" type="text/css" href="../style.css"/>
                 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
                 <link rel="php" type="php" href="process.php"/>
+                <link rel="php" type="php" href="Reservation.php"/>
             </head>
             <body onload="init()">
                 <div class="header">
@@ -60,7 +61,7 @@
                                     <p>Bemerkung:
                                         <input name="note" value="" placeholder="Bemerkung"/>
                                     </p>
-                                    <input type="hidden" name="ID" value="{$ID}"/>
+                                    <input type="hidden" name="ID" value=""/>
                                     <p class="submit">
                                         <input type="submit" value="Reservieren"/>
                                     </p>
@@ -75,21 +76,21 @@
                         <li id="courses">
                             <div class="content">
                                 <ul>
-                                    <xsl:apply-templates select="document(//courses/@name)"/>
+                                    <xsl:apply-templates select="document('../DBs/coursesDB.xml')"/>
                                 </ul>
                             </div>
                         </li>
                         <li id="rooms">
                             <div class="content">
                                 <ul>
-                                    <xsl:apply-templates select="document(//rooms/@name)"/>
+                                    <xsl:apply-templates select="document('../DBs/roomDB.xml')"/>
                                 </ul>
                             </div>
                         </li>
                         <li id="equip">
                             <div class="content">
                                 <ul>
-                                    <xsl:apply-templates select="document(//equip/@name)"/>
+                                    <xsl:apply-templates select="document('../DBs/equipmentDB.xml')"/>
                                 </ul>
                             </div>
                         </li>
@@ -105,7 +106,7 @@
         <xsl:if test="state = 'aktiv'">
             <table>
                 <caption>
-                    <a href="?data={@id}#reservation">
+                    <a href="#reservation" onclick="">
                         <h3>
                             <xsl:value-of select="name"/>
                         </h3>
@@ -199,7 +200,7 @@
     <xsl:template name="rooms" match="//room">
         <table>
             <caption>
-                <a href="?data={@id}#reservation">
+                <a href="#reservation" onclick="save({@id})">
                     <h3>
                         <xsl:value-of select="name"/>
                     </h3>
