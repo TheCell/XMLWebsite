@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-				xmlns:sc="https://thecell.eu/xmlsportcenter" 
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+				xmlns:sc="https://thecell.eu/xmlsportcenter"
 				xmlns:xhtml="http://www.w3.org/1999/xhtml"
 				xmlns:xs="http://www.w3.org/2001/XMLSchema"
-				xmlns:date="http://exslt.org/dates-and-times" 
+				xmlns:date="http://exslt.org/dates-and-times"
 				extension-element-prefixes="date"
 				version="1.0">
 
@@ -23,23 +23,7 @@
 				<link rel="stylesheet" type="text/css" href="newsfeed.css" />
             </head>
             <body>
-				<div class="header">
-					<div id="logo">Place Logo here</div>
-					<div class="menu">
-						<div class="menuitem">
-							<a>Anmelden</a>
-						</div>
-						<div class="menuitem">
-							<a href="calendar/calendar.xhtml">Kalender</a>
-						</div>
-						<div class="menuitem">
-							<a>Angebote</a>
-						</div>
-					</div>
-				</div>
-                
-				<h1>Anstehende Events</h1>
-				<div class="newsfeedGrid">
+            	<div class="newsfeedGrid">
                     <!-- Load the database and apply templates -->
                     <xsl:apply-templates
 						select="document('../DBs/coursesDB.xml')"/>
@@ -47,10 +31,10 @@
             </body>
         </html>
     </xsl:template>
-    
+
     <!-- create templates for the database entries -->
     <!--<xsl:template match="//course[xs:date(./dateTo/text()) > xs:date()]">-->
-	<xsl:template match="//course">
+	<xsl:template name="course">
 		<!--<xsl:value-of  select="current-dateTime()"/>-->
 		<div class="feedDate">
 			<xsl:value-of select="dateFrom/text()" />
@@ -60,10 +44,26 @@
 				<xsl:value-of select="name/text()" />
 			</span>
 			<span class="timeFromTo">
-				<xsl:value-of select="timeFrom/text()" /> - 
+				<xsl:value-of select="timeFrom/text()" /> -
 				<xsl:value-of select="timeTo/text()" />
 			</span>
 		</div>
     </xsl:template>
-    
+
+    <xsl:template match="courses">
+		<!-- <xsl:value-of select="$recommendedFor" /> -->
+		<!-- <xsl:for-each select="course[contains(dateFrom/text(), '2018-03-15')]"> -->
+		<xsl:for-each select="course[((number(translate(substring(dateFrom/text(),1,10),'-','')) &gt; number(translate(substring($currentDateMinusOne,1,10),'-',''))) and (number(translate(substring(dateFrom/text(),1,10),'-','')) &lt;= number(translate(substring($currentDatePlusFour,1,10),'-','')))) ]">
+			<xsl:call-template name="course">
+				<!--<xsl:with-param name="title" select = "title" />-->
+				<xsl:with-param name="currentDate"
+								select="$currentDate" />
+				<xsl:with-param name="currentDateMinusOne"
+								select="$currentDateMinusOne" />
+				<xsl:with-param name="currentDatePlusFour"
+								select="$currentDatePlusFour" />
+			</xsl:call-template>
+		</xsl:for-each>
+		<!--<xsl:apply-templates />-->
+	</xsl:template>
 </xsl:stylesheet>

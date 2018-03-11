@@ -1,123 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <facilities xsi:noNamespaceSchemaLocation="roomDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <room id="R001">
-        <name>Lager</name>
-        <in_building>Hotelanlage</in_building>
-        <description>Lagert material</description>
+        <name>Umkleide Herren</name>
+        <in_building>Schwimmbad</in_building>
+        <description>
+            Die Herrenumkleide verfügt über Schliessfächer in zwei verschiedene Grössen sowie über fünf Einzelduschen und Umkleidekabinen.
+        </description>
     </room>
     <room id="R002">
-        <name>Umkleide Herren</name>
+        <name>Umkleide Damen</name>
         <in_building>Schwimmbad</in_building>
-        <description/>
+        <description>
+            Die Damenumkleide verfügt über Schliessfächer in zwei verschiedene Grössen sowie über fünf Einzelduschen und Umkleidekabinen.
+        </description>
     </room>
     <room id="R003">
-        <name>Umkleide Damen</name>
-        <in_building>Schwimmbad</in_building>
-        <description/>
-    </room>
-    <room id="R004">
-        <name>Umkleide Herren</name>
-        <in_building>Kletterhalle</in_building>
-        <description/>
-    </room>
-    <room id="R005">
-        <name>Umkleide Damen</name>
-        <in_building>Kletterhalle</in_building>
-        <description/>
-    </room>
-    <room id="R006">
-        <name>Umkleide Herren</name>
-        <in_building>Mehrzweckhalle</in_building>
-        <description/>
-    </room>
-    <room id="R007">
-        <name>Umkleide Damen</name>
-        <in_building>Mehrzweckhalle</in_building>
-        <description/>
-    </room>
-    <room id="R008">
-        <name>Umkleide Herren</name>
-        <in_building>Fitness</in_building>
-        <description/>
-    </room>
-    <room id="R009">
-        <name>Umkleide Damen</name>
-        <in_building>Fitness</in_building>
-        <description/>
-    </room>
-    <room id="R010">
         <name>Kinderbecken</name>
         <in_building>Schwimmbad</in_building>
-        <description/>
+        <description>
+            Im Kinderbecken können sich die Kleinen austoben und planschen, ohne Angst vor der Tiefe des Beckens zu haben.
+        </description>
     </room>
-    <room id="R011">
+    <room id="R004">
         <name>Sauna</name>
         <in_building>Schwimmbad</in_building>
+        <description>
+            Unsere Sauna besteht aus nordischem Fichtenholz. Ein mal täglich findet hier ein Aufguss statt. Auf Anmeldung können weitere Aufgüsse gebucht werden.
+        </description>
+    </room>
+    <room id="R005">
+        <name>Hallenbad</name>
+        <in_building>Schwimmbad</in_building>
+        <description>
+            Das Hallenbad ist ein Warmwasserbecken. Die Temperatur befindet sich um die 40 Grad Celsius. Besonders zu empfehlen ist der zugehörige Aussenpool. Er wird Abends speziell beleuchtet und verleiht der gesamten Anlage ein wunderschönes Ambiente.
+        </description>
+    </room>
+    <room id="R006">
+        <name>Sportbecken</name>
+        <in_building>Schwimmbad</in_building>
+        <description>
+            Das Sportbecken ist 50 Meter lang und verfügt über acht Bahnen. Einzelne Bahnen können auf Anfrage an der Rezeption reserviert werden.
+        </description>
+    </room>
+    <room id="R007">
+        <name>Kaltwasserbecken</name>
+        <in_building>Schwimmbad</in_building>
+        <description>
+            Dieses Becken ist förderlich in Kombination mit Heissanwendungen. Dadurch kommt der Kreislauf richtig in Schwung.
+        </description>
+    </room>
+    <room id="R008">
+        <name>Riverpool</name>
+        <in_building>Schwimmbad</in_building>
+        <description>
+            Die Riverpool ist ein künstlich erzeugter Fluss. Die Strömungen werden zu bestimmten Zeiten geändert. Hierbei gilt es die Empfehlungen betreffend Schwimmfähigkeit und Alter zu beachten.
+        </description>
+    </room>
+    <room id="R009">
+        <name>Schwimmbad Lager</name>
+        <in_building>Schwimmbad</in_building>
+        <description>
+            Hier bewahren wir zahlreiche Schwimmhilfen und Wasserartikel auf. Auf Anfrage werden diese zu den gewünschten Zeiten bereitgestellt.
+        </description>
+    </room>
+    <room id="R011">
+        <name>Umkleide Herren</name>
+        <in_building>Mehrzweckhalle</in_building>
         <description/>
     </room>
     <room id="R012">
-        <name>Hallenbad</name>
-        <in_building>Schwimmbad</in_building>
+        <name>Umkleide Damen</name>
+        <in_building>Mehrzweckhalle</in_building>
         <description/>
     </room>
-    <room id="R013">
-        <name>Sportbecken</name>
-        <in_building>Schwimmbad</in_building>
-        <description/>
+    <room id="R021">
+        <name>Umkleide Herren</name>
+        <in_building>Kletterhalle</in_building>
+        <description>
+            Die Herrenumkleide verfügt über Schliessfächer in zwei verschiedenen Grössen sowie über eine Gemeinschaftsdusche und Kabine.
+        </description>
     </room>
-    <room id="R014">
-        <name>Kaltwasserbecken</name>
-        <in_building>Schwimmbad</in_building>
-        <description/>
+    <room id="R022">
+        <name>Umkleide Damen</name>
+        <in_building>Kletterhalle</in_building>
+        <description>
+            Die Damenumkleide verfügt über Schliessfächer in zwei verschiedenen Grössen sowie über eine Gemeinschaftsdusche und Kabine.
+        </description>
     </room>
-    <room id="R015">
-        <name>Riverpool</name>
-        <in_building>Schwimmbad</in_building>
-        <description/>
-    </room>
-    <room id="R016">
+    <room id="R023">
         <name>Trainingsbereich</name>
         <in_building>Kletterhalle</in_building>
-        <description/>
+        <description>
+            Der Trainingsbereich wird gerne zum Einwärmen oder auch für das Krafttraining mit dem eigenen Körpergewicht verwendet. Zahlreiche Hangboards, Campusboards und Ringe machen die unterschiedlichsten Übungen mit dem eigenen Körpergewicht möglich.
+        </description>
     </room>
-    <room id="R017">
+    <room id="R024">
         <name>Boulderbereich</name>
         <in_building>Kletterhalle</in_building>
-        <description/>
+        <description>
+            Der Boulderbereich ist bestens geeignet um einzelne Züge zu perfektionieren. Vor dem Klettern findet hier meistens das Einwärmen statt. Trotz der geringen Höhe von 2-3 Metern kann man sich in diesem Bereich bestens austoben und mit geeigneten Übungen alle Muskelpartien ansprechen.
+        </description>
     </room>
-    <room id="R018">
+    <room id="R025">
         <name>Kletterwand Ost</name>
         <in_building>Kletterhalle</in_building>
         <description/>
     </room>
-    <room id="R019">
+    <room id="R026">
         <name>Kletterwand Nord</name>
         <in_building>Kletterhalle</in_building>
-        <description/>
+        <description>
+            Die Nordwand ist etwas für Fortgeschrittene. Die Neigung ist hier sehr stark, so dass man sein eigenes Körpergewicht schnell mal in den Armen spührt.
+        </description>
     </room>
-    <room id="R020">
+    <room id="R027">
         <name>Kletterwand West</name>
         <in_building>Kletterhalle</in_building>
         <description/>
     </room>
-    <room id="R021">
+    <room id="R028">
         <name>Klettersäule</name>
         <in_building>Kletterhalle</in_building>
-        <description/>
+        <description>
+            Die Klettersäule ist ein Turm in der Mitte der Kletterhalle. Er ermöglicht ganz spannende und aussergewöhnliche Routen.
+        </description>
     </room>
-    <room id="R022">
-        <name>Schwimmbad Lager</name>
-        <in_building>Schwimmbad</in_building>
-        <description/>
-    </room>
-    <room id="R023">
+    <room id="R029">
         <name>Kletterhalle Lager</name>
         <in_building>Kletterhalle</in_building>
-        <description/>
+        <description>
+            Im Lager der Kletterhalle haben wir diverse Ausrüstung zum Klettern und Bouldern. Zudem befinden sich hier die Geräte und Maschinen für den Unterhalt der Kletteranlagen.
+        </description>
     </room>
-    <room id="R024">
+    <room id="R040">
+        <name>Gesamtgebäude</name>
+        <in_building>Hotelanlage</in_building>
+        <description>
+             Die Hotelanlage besteht aus vier Gebäuden. Im Hauptgebäude G1 befindet sich der Empfang sowie auch die normalen Hotelzimmer. Die Gebäude G2 bis G4 sind Schläge von 20 bis 40 Personen. 
+        </description>
+    </room>
+    <room id="R041">
+        <name>Rezeption</name>
+        <in_building>Hotelanlage</in_building>
+        <description>
+            Die Rezeption befindet sich im Hauptgebäude G1 der Hotelanlage. Bei Fragen oder Unklarheiten steht Ihnen das Personal von morgens um 06:00 Uhr bis abends um 22:00 Uhr zur Verfügung. 
+        </description>
+    </room>
+    <room id="R050">
         <name>Fitnessraum</name>
         <in_building>Fitness</in_building>
-        <description/>
+        <description>
+            Der Fitnessraum verfügt über die gängigen Geräte zum Aufbau, Stabilisation und Erhaltung der Muskelpartien.
+        </description>
+    </room>
+    <room id="R051">
+        <name>Umkleide Herren</name>
+        <in_building>Fitness</in_building>
+        <description>
+            Die Herrenumkleide verfügt über Schliessfächer in zwei verschiedene Grössen sowie über fünf Einzelduschen und Umkleidekabinen.
+        </description>
+    </room>
+    <room id="R052">
+        <name>Umkleide Damen</name>
+        <in_building>Fitness</in_building>
+        <description>
+            Die Damenumkleide verfügt über Schliessfächer in zwei verschiedene Grössen sowie über fünf Einzelduschen und Umkleidekabinen.
+        </description>
+    </room>
+    <room id="R061">
+        <name>Therapiezimmer 1</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
+    </room>
+    <room id="R062">
+        <name>Therapiezimmer 2</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
+    </room>
+    <room id="R063">
+        <name>Therapiezimmer 3</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
+    </room>
+    <room id="R064">
+        <name>Therapiezimmer 4</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
+    </room>
+    <room id="R065">
+        <name>Therapiezimmer 5</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
     </room>
 </facilities>

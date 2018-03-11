@@ -2,182 +2,217 @@
 <equipment xsi:noNamespaceSchemaLocation="equipmentDB.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <item id="E001">
         <name>Schwimmnudel</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Schwimmunterstützung</description>
     </item>
     <item id="E002">
         <name>Schwimmgürtel</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Schwimmunterstützung</description>
     </item>
     <item id="E003">
         <name>Aqua-Jogging Gürtel</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Schwimmunterstützung für Wassersport</description>
     </item>
     <item id="E004">
         <name>Schwimmlernhilfe</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Schwimmunterstützung</description>
     </item>
     <item id="E005">
         <name>Schwimmbrett</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Schwimmunterstützung</description>
     </item>
     <item id="E006">
         <name>Aquarider</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Wasserfahrrad für Wassersport</description>
     </item>
     <item id="E007">
         <name>Beinschwimmer</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Schwimmunterstützung für Wassersport</description>
     </item>
     <item id="E008">
         <name>Schwimmflossen</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Schwimmunterstützung für Wassersport</description>
     </item>
     <item id="E009">
         <name>Tauchreifen</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Bögen zum durchtauchen für Tauchübungen. Abstecken für Tauchstrecken.</description>
     </item>
     <item id="E010">
         <name>Tauchring</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Ringgewichte für Tauchübungen</description>
     </item>
     <item id="E011">
         <name>Handpaddel</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Schwimmunterstützung</description>
     </item>
     <item id="E012">
         <name>Aqua-Stepp</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Trittschemmel für Steppübungen im Wasser.</description>
     </item>
     <item id="E013">
         <name>Wasserballtor</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Wassertor für Ballsport im Wasser.</description>
     </item>
     <item id="E014">
         <name>Schwimmergometer</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Fitnessgerät für Schwimmstilübungen.</description>
     </item>
     <item id="E015">
         <name>Unterqwassertrampolin</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Fitnessgerät für Wassersport.</description>
     </item>
     <item id="E016">
         <name>Slalom-Tauchspiel</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Luftröhren mit Saugnapf für Tauchsport.</description>
     </item>
     <item id="E017">
         <name>Rollstuhlkran</name>
-        <roomID>R022</roomID>
+        <roomID>R009</roomID>
         <description>Ein und Ausstiegshilfe ins Schwimmbecken.</description>
     </item>
     <item id="E018">
         <name>Kletterzugseil</name>
-        <roomID>R023</roomID>
+        <roomID>R029</roomID>
         <description>Kletterunterstützung zur Gewichtsverringerung.</description>
     </item>
     <item id="E019">
         <name>Kletterzugseil</name>
-        <roomID>R023</roomID>
+        <roomID>R029</roomID>
         <description>Kletterunterstützung zur Gewichtsverringerung.</description>
     </item>
     <item id="E020">
         <name>Gewichte</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E021">
         <name>Laufband</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E022">
         <name>Seil</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E023">
         <name>Brustpresse</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E024">
         <name>Beinpresse</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E025">
         <name>Fahrräder</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E026">
         <name>Rudergerät</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E027">
         <name>Yogamatten</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E028">
         <name>Hantelbank</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E029">
         <name>Kurzhanteln</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E030">
         <name>Langhantel</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E031">
         <name>Seilzug</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E032">
         <name>Blackcurl</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E033">
         <name>Rückenpresse</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E034">
         <name>Sprossenwand</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E035">
         <name>Klimmzugstange</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
     </item>
     <item id="E036">
         <name>Stepper</name>
-        <roomID>R024</roomID>
+        <roomID>R050</roomID>
         <description></description>
+    </item>
+    <item id="E037">
+        <name>Behandlungsliege</name>
+        <roomID>R061</roomID>
+        <description></description>
+    </item>
+    <item id="E038">
+        <name>Behandlungsliege</name>
+        <roomID>R062</roomID>
+        <description></description>
+    </item>
+    <item id="E039">
+        <name>Behandlungsliege</name>
+        <roomID>R063</roomID>
+        <description></description>
+    </item>
+    <item id="E040">
+        <name>Behandlungsliege</name>
+        <roomID>R064</roomID>
+        <description></description>
+    </item>
+    <item id="E041">
+        <name>Behandlungsliege</name>
+        <roomID>R065</roomID>
+        <description></description>
+    </item>
+    <item id="E042">
+        <name>Lokomat</name>
+        <roomID>R061</roomID>
+        <description>Therapiegerät zur Behandlung mobilitätseingeschränkter Menschen</description>
+    </item>
+    <item id="E043">
+        <name>Armeo</name>
+        <roomID>R065</roomID>
+        <description>Therapiegerät zur Behandlung mobilitätseingeschränkter Menschen</description>
     </item>
 </equipment>

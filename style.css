@@ -6,6 +6,15 @@
     padding: 0;
 }
 
+
+.newsfeed
+{
+    width: 100%;
+    height: 800px;
+    overflow-y: hidden;
+    border: 0;
+}
+
     .header {
         color: #FFF;
     }
@@ -243,6 +252,11 @@
     */
     .news {
         width: 100%;
+    }
+
+    .coursesOffers p{
+        font-size: 30px;
+        font-weight: bold;
     }
 
 @media only screen and (min-width:756px){
