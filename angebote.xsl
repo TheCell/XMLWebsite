@@ -32,10 +32,10 @@
                     </div>
                 </div>
                 <div class="main">
-                    <h1>Angebote und Kurse im Sportzentrum Hopfentee:</h1>
                     <ul class="tabs">
                         <li class="coursesOffers">
                             <div class="content">
+                                <p>Angebote &amp; Kurse:</p>
                                 <ul>
                                     <xsl:apply-templates select="document('DBs/coursesDB.xml')/courses"/>
                                 </ul>

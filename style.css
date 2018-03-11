@@ -245,8 +245,9 @@
         width: 100%;
     }
 
-    .coursesOffers{
-        list-style: none;
+    .coursesOffers p{
+        font-size: 30px;
+        font-weight: bold;
     }
 
 @media only screen and (min-width:756px){
