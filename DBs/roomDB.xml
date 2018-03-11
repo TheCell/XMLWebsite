@@ -160,11 +160,46 @@
             Die Herrenumkleide verfügt über Schliessfächer in zwei verschiedene Grössen sowie über fünf Einzelduschen und Umkleidekabinen.
         </description>
     </room>
-    <room id="R051">
+    <room id="R052">
         <name>Umkleide Damen</name>
         <in_building>Fitness</in_building>
         <description>
             Die Damenumkleide verfügt über Schliessfächer in zwei verschiedene Grössen sowie über fünf Einzelduschen und Umkleidekabinen.
+        </description>
+    </room>
+    <room id="R061">
+        <name>Therapiezimmer 1</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
+    </room>
+    <room id="R062">
+        <name>Therapiezimmer 2</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
+    </room>
+    <room id="R063">
+        <name>Therapiezimmer 3</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
+    </room>
+    <room id="R064">
+        <name>Therapiezimmer 4</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
+        </description>
+    </room>
+    <room id="R065">
+        <name>Therapiezimmer 5</name>
+        <in_building>Therapiezimmer</in_building>
+        <description>
+            Dieses Therapiezimmer kann für die Behandlung der Patienten reserviert werden. Bitte beachten Sie die Einrichtung.
         </description>
     </room>
 </facilities>

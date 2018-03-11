@@ -23,8 +23,8 @@
                 <div class="description">
                     <xsl:value-of select="../description/text()"/>
                 </div>
-                <div class="equipment">
-                    Hier finden Sie folgende Gegenstände:
+                <div class="equipment"><br/>
+                    <i>Hier finden Sie folgende Gegenstände:</i>
                     <xsl:apply-templates select="document('../DBs/equipmentDB.xml')//item/roomID">
                         <xsl:with-param name="room">
                             <xsl:value-of select="../@id"/>

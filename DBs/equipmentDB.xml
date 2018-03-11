@@ -180,4 +180,29 @@
         <roomID>R050</roomID>
         <description></description>
     </item>
+    <item id="E037">
+        <name>Behandlungsliege</name>
+        <roomID>R061</roomID>
+        <description></description>
+    </item>
+    <item id="E038">
+        <name>Behandlungsliege</name>
+        <roomID>R062</roomID>
+        <description></description>
+    </item>
+    <item id="E039">
+        <name>Behandlungsliege</name>
+        <roomID>R063</roomID>
+        <description></description>
+    </item>
+    <item id="E040">
+        <name>Behandlungsliege</name>
+        <roomID>R064</roomID>
+        <description></description>
+    </item>
+    <item id="E041">
+        <name>Behandlungsliege</name>
+        <roomID>R065</roomID>
+        <description></description>
+    </item>
 </equipment>
