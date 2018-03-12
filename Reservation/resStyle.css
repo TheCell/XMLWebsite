@@ -1,16 +1,15 @@
-@import "compass/css3";
-
 .tabs {
     position: relative;
-    width: 25em;
     list-style: none;
     padding: 0;
-    margin: auto;
+    margin-left: 25px;
 }
 
-.tabs li {
-    float: left;
-    margin-top: -300px;
+.tabs li::before {
+    content: "";
+    display: block;
+    height: 245px;
+    margin: -245px 0 0;
 }
 
 .trigger {
@@ -25,9 +24,6 @@
 
 .content {
     display:none;
-    position: absolute;
-    top: 2em;
-    left: 0;
     padding: 0 .5em;
 }
 
@@ -64,20 +60,27 @@ a{
     font-size: 24px;
 }
 
+.content > ul > table:nth-child(2n+1) {
+    clear: both;
+}
+
+.content > ul > table:nth-child(2n) {
+    margin-left: 5%;
+}
 
 table{
     text-align: left;
     margin: 0;
-    padding-right: 100px;
     border-collapse: collapse;
     float: left;
+    width: 45%;
 }
 caption{
     text-align: left;
 }
 
 td{
-    padding-right: 50px;
+    padding: 5px 50px 5px 5px;
     margin: 0px 0px 0px 0px;
 }
 
@@ -94,12 +97,10 @@ tr{
 }
 
 form {
-    background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE);
-    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE);
-    background: linear-gradient(bottom, #CCCCCC, #EEEEEE);
-    margin: auto;
+    background: rgba(4,142,204,0.8);
+    margin-left: 25px;
     position: relative;
-    width: 350px;
+    width: 400px;
     height: auto;
     font-size: 14px;
     line-height: 24px;
@@ -114,12 +115,12 @@ form {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-input[type="text"]{
-    width: 150px;
-}
-
-input[type="password"]{
-    width: 230px;
+input {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border-style: none;
+    padding: 3px;
 }
 
 input[placeholder]{
@@ -139,6 +140,16 @@ input[type="submit"]{
 input[type="submit"]{
     color: black;
     font-weight: bold;
+    border-style: none;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background: rgba(0,0,0,0.9);
+    cursor: pointer;
 }
 
 #reservation div{
@@ -159,5 +170,24 @@ p{
     background: rgba(0,0,0,0.8);
     color: #FFF;
     width: 100%;
-    margin-top: 6500px;
+}
+
+@media only screen and (max-width:756px){
+    .content > ul > table:nth-child(2n+1) {
+        clear: none;
+    }
+
+    .content > ul > table:nth-child(2n) {
+        margin: 0;
+    }
+    
+    table {
+        float: none;
+        width: 100%;
+    }
+    
+    form {
+        margin-left: 0;
+        width: 100%;
+    }
 }
