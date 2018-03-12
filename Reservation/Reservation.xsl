@@ -104,12 +104,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer">
+                <div class="resFooter">
                     <div class="footeritems">
                         <div class="impressum">Designed and developed by: Joel Salzmann, Larissa Schuler, Pascal Stalder, Simon Hischier</div>
                         <div class="copyright">Sportzentrum Hopfentee</div>
                     </div>
                 </div>
+
             </body>
 
         </html>

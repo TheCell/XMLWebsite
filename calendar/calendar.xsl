@@ -18,7 +18,7 @@
             <body>
 				<div class="header">
 					<div id="logo">
-						<img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/>
+						<a href="../index.xhtml#item-1"><img alt="Logo von Sportzentrum Hopfentee" src="../Logo.jpg"/></a>
 					</div>
 					<div class="menu">
 						<div class="menuitems">
