@@ -1,3 +1,8 @@
+var xml;
+var xsl;
+var xmlready = false;
+var filepath = "";
+
 function init() {
     var buildings = document.getElementsByClassName("building");
     for (var i = 0; i < buildings.length; i++) {
@@ -17,32 +22,55 @@ function loadXMLDoc(file)
     {
         xhttp = new XMLHttpRequest();
     }
-    xhttp.open("GET", file, false);
-    try {
-        xhttp.responseType = "msxml-document";
-    } catch (err) {
-        console.log("Coult not load xml-file");
-    } // Helping IE11
-    xhttp.send("");
-    return xhttp.responseXML;
+    xhttp.open("GET", file);
+    
+    xhttp.onload = function (e) {
+        if (xmlready === true) {
+            console.log("xml is ready, lets get xsl");
+            xsl = xhttp.responseXML;
+            xmlready = false;
+            showContent();
+        } else {
+            console.log("lets get xml");
+            xml = xhttp.responseXML;
+            xmlready = true;
+            loadXMLDoc(filepath+".xsl");
+        }
+    };
+    
+//    try {
+//        xhttp.responseType = "document";
+//    } catch (err) {
+//        console.log("Coult not load xml-file:" + err);
+//    } // Helping IE11
+    xhttp.send(null);
 }
 
 function getContent(filename)
 {
-    xml = loadXMLDoc("map/"+filename+".xml");
-    xsl = loadXMLDoc("map/"+filename+".xsl");
+    filepath = "map/"+filename;
+    loadXMLDoc(filepath+".xml");
+}
+
+function showContent () {
     // code for IE
-    if (window.ActiveXObject || xhttp.responseType == "msxml-document")
-    {
-        ex = xml.transformNode(xsl);
-        document.getElementById("buildingoutput").innerHTML = ex;
-    }
+//    if (window.ActiveXObject || xhttp.responseType === "document")
+//    {
+//        ex = xml.transformNode(xsl);
+//        document.getElementById("buildingoutput").innerHTML = ex;
+//    }
     // code for Chrome, Firefox, Opera, etc.
-    else if (document.implementation && document.implementation.createDocument)
+    if (document.implementation && document.implementation.createDocument)
     {
+//        console.log("chrome, firefox, opera");
+//        var xmlprint = new XMLSerializer().serializeToString(xml.documentElement);
+//        var xslprint = new XMLSerializer().serializeToString(xsl.documentElement);
+//        console.log("xml: "+xmlprint);
+//        console.log("xsl: "+xslprint);
         xsltProcessor = new XSLTProcessor();
         xsltProcessor.importStylesheet(xsl);
         resultDocument = xsltProcessor.transformToFragment(xml, document);
+//        console.log("result: "+resultDocument.nodeValue);
         if(document.getElementById("buildingoutput") !== null) {
             var item = document.getElementById("buildinginfo");
             if (item === null) {
